@@ -1,0 +1,609 @@
+{% extends 'main_app/_base.html' %}
+{% load static %}
+{% block content %}
+<!-- Start Hero section -->
+<section id='about' class="flex md:flex-row flex-col sm:py-16 py-6 hero-container">
+    <div class="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6">
+      <div class='flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 discount-banner'>
+        <img src="{% static 'images/Discount.webp' %}" alt="discount" class='w-[32px] h-[32px] section-title'/>
+        <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] ml-2 section-title">
+          <span class='text-white'> Get a Free </span>
+          <span class='com-color'> .com </span>
+          <span class='text-white'> Domain For </span>
+          <span class='text-white'> 1 Year </span>
+        </p>
+      </div>
+      <div class='flex flex-row justify-between items-center w-full'>
+        <h1 class='flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px] main-title'>
+            Bring <br class='sm:block hidden'/>
+            <span class='text-gradient'>Your Idea,</span>
+        </h1>
+        <div class='ss:flex hidden md:mr-4 mr-0 animate-vertical'>
+            <div class="flex justify-center items-center w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer" >
+                <div class="flex justify-center items-center flex-col bg-primary w-[100%] h-[100%] rounded-full">
+                    <span class="animate-ping absolute inline-flex h-20 w-20 rounded-full bg-sky-400 opacity-75"></span>
+                    <div class="flex justify-center items-start flex-row">
+                        <p class="font-barlow font-medium text-[18px] leading-[23px] mr-2">
+                            <span class="text-gradient">Get</span>
+                        </p>
+                        <img src="{% static 'images/arrow-up.svg' %}" class="w-[23px] h-[23px] object-contain" alt="Get quote" />
+                    </div>
+                    <p class="font-barlow font-medium text-[18px] leading-[23px]">
+                        <span class="text-gradient">Quote</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <h1 class='font-barlow font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full main-title'>
+        We’ll handle the rest.
+      </h1>
+      <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 section-title">
+        Elevate your digital footprint with VoltageLabs, a leading <strong>web development agency</strong> empowering 
+        businesses for success in the online world.
+      </p>
+    </div>
+    <div class="flex-1 flex justify-center items-center md:my-0 my-10 relative image">
+        <img src="{% static 'images/banner.webp' %}" alt="design" class='w-[100%] h-[100%] relative z-[5] mr-0 md:mr-[70px] md:ml-0 ml-[7px] banner-box'/>
+        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
+        <div class='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 top-0 white__gradient'></div>
+        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
+    </div>
+    <div class="ss:hidden flex justify-center items-center animate-vertical">
+        <div class="flex justify-center items-center w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer" >
+            <div class="flex justify-center items-center flex-col bg-primary w-[100%] h-[100%] rounded-full">
+              <div class="flex justify-center items-start flex-row">
+                <span class="animate-ping absolute inline-flex h-20 w-20 rounded-full bg-sky-400 opacity-75"></span>
+                <p class="font-barlow font-medium text-[18px] leading-[23px] mr-2">
+                  <span class="text-gradient">Get</span>
+                </p>
+                <img src="{% static 'images/arrow-up.svg' %}" class="w-[23px] h-[23px] object-contain" alt="Get quote" />
+              </div>
+                <p class="font-barlow font-medium text-[18px] leading-[23px]">
+                  <span class="text-gradient">Quote</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hero section -->
+
+<!-- Start Statistics section -->
+<section class="flex justify-center items-center flex-row flex-wrap sm:mb-20 mb-6 md:ml-[45px] lg:ml-[45px] xl:ml-[45px] sm:ml-[45px] ">
+    <div class="flex-1 flex justify-start items-center flex-row m-3 stat-figures">
+        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white">200+</h4>
+        <p class="font-barlow font-normal xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3">Websites Designed</p>
+    </div>
+    <div class="flex-1 flex justify-start items-center flex-row m-3 stat-figures">
+        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white">150+</h4>
+        <p class="font-barlow font-normal xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3">Happy Clients</p>
+    </div>
+    <div class="flex-1 flex justify-start items-center flex-row m-3 stat-figures">
+        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white">300+</h4>
+        <p class="font-barlow font-normal xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3">Websites Maintained</p>
+    </div>
+</section>
+<!-- End Statistics section -->
+
+<!-- Start Services section -->
+<section id='about' class="flex md:flex-row flex-col sm:py-16 py-6">
+    <div class="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6">
+      <div class='flex flex-row justify-between items-center w-full'>
+        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">
+            Our <br class="sm:block hidden"/> Comprehensive Services.
+        </h2>
+      </div>
+      <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 image section-title">
+        At VoltageLabs, we understand the crucial role that a visually stunning and user-friendly website plays in today's digital landscape. With our expertise in the field, we strive to transform your online presence into a captivating and dynamic platform that drives engagement, enhances your brand identity, and maximizes your online success. <br />
+        As a leading web design and development company, we take pride in our ability to blend creativity and technical proficiency seamlessly. Our team of highly skilled designers and developers are adept at crafting unique, tailor-made solutions that align with your specific business goals and objectives. We believe that every website should be a reflection of your brand's essence, and our services are centered around achieving just that. <br />
+        By offering the services listed, we go beyond the technical aspects of web development and focus on a holistic approach, helping you make informed decisions and strategies that will drive your digital growth and achieve your desired outcomes.
+      </p>
+    </div>
+    <div class="flex-1 flex justify-center items-center md:my-0 my-10 relative lg:flex-col md:flex-row xl:flex-col sm:flex-row flex-wrap">
+        <div class="flex flex-row p-6 rounded-[20px] service-card mr-10 mb-6 sm:ml-16 ml-7 xl:ml-0 lg:ml-0 md:ml-0 banner-box">
+            <div class="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-dimBlue">
+                <img src="{% static 'images/webdevelopment.webp' %}" alt="icon" class="w-[50%] h-[50%] object-contain"/>
+            </div>
+            <div class="flex-1 flex flex-col ml-3">
+                <h4 class="font-barlow font-semibold text-white text-[18px] leading-[23px] mb-1">
+                    Custom Web Design & Development.
+                </h4>
+                <p class="font-barlow font-normal text-dimWhite text-[16px] leading-[24px] mb-1">
+                    We specialize in creating visually stunning and intuitive website designs that leave a lasting impression on your visitors.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-row p-6 rounded-[20px] service-card mr-10 mb-6 sm:ml-16 ml-7 xl:ml-0 lg:ml-0 md:ml-0 banner-box">
+            <div class="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-dimBlue">
+                <img src="{% static 'images/ecommerce.webp' %}" alt="icon" class="w-[50%] h-[50%] object-contain"/>
+            </div>
+            <div class="flex-1 flex flex-col ml-3">
+                <h4 class="font-barlow font-semibold text-white text-[18px] leading-[23px] mb-1">
+                    E-commerce Solutions.
+                </h4>
+                <p class="font-barlow font-normal text-dimWhite text-[16px] leading-[24px] mb-1">
+                    We provide end-to-end e-commerce solutions, helping businesses establish and grow their online stores.                </p>
+            </div>
+        </div>
+        <div class="flex flex-row p-6 rounded-[20px] service-card mr-10 mb-6 sm:ml-16 ml-7 xl:ml-0 lg:ml-0 md:ml-0 banner-box">
+            <div class="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-dimBlue">
+                <img src="{% static 'images/SEO.webp' %}" alt="icon" class="w-[50%] h-[50%] object-contain"/>
+            </div>
+            <div class="flex-1 flex flex-col ml-3">
+                <h4 class="font-barlow font-semibold text-white text-[18px] leading-[23px] mb-1">
+                    Search Engine Optimization.
+                </h4>
+                <p class="font-barlow font-normal text-dimWhite text-[16px] leading-[24px] mb-1">
+                    We employ effective SEO strategies to improve your website's visibility and organic rankings on search engines.
+                </p>
+            </div>
+        </div>
+        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
+        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
+        <div class="flex flex-row p-6 rounded-[20px] service-card mr-10 mb-6 sm:ml-16 ml-7 xl:ml-0 lg:ml-0 md:ml-0 banner-box">
+            <div class="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-dimBlue">
+                <img src="{% static 'images/consultation.webp' %}" alt="icon" class="w-[50%] h-[50%] object-contain"/>
+            </div>
+            <div class="flex-1 flex flex-col ml-3">
+                <h4 class="font-barlow font-semibold text-white text-[18px] leading-[23px] mb-1">
+                    Consultation services.
+                </h4>
+                <p class="font-barlow font-normal text-dimWhite text-[16px] leading-[24px] mb-1">
+                    We offer comprehensive consultation services to help you make informed decisions about your web development and digital strategy.                </p>
+            </div>
+        </div>
+        <div class="flex flex-row p-6 rounded-[20px] service-card mr-10 sm:ml-16 ml-7 xl:ml-0 lg:ml-0 md:ml-0 banner-box">
+            <div class="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-dimBlue">
+                <img src="{% static 'images/webmaintenance.webp' %}" alt="icon" class="w-[50%] h-[50%] object-contain"/>
+            </div>
+            <div class="flex-1 flex flex-col ml-3">
+                <h4 class="font-barlow font-semibold text-white text-[18px] leading-[23px] mb-1">
+                    Website upgrade and maintenance.
+                </h4>
+                <p class="font-barlow font-normal text-dimWhite text-[16px] leading-[24px] mb-1">
+                    Our team provides comprehensive website maintenance services, including, security patches, and performance optimizations.                
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Services section -->
+
+<!-- Start Testimonials Section -->
+<section id="testimonials" class="sm:py-16 py-6 flex justify-center items-center flex-col ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 relative">
+    <div class="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
+        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">What are our <br class="sm:block hidden"/> Happy Clients saying</h2>
+        <div class="w-full md:mt-0 mt-6">
+            <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] text-left max-w-[450px] banner-box">
+                At VoltageLabs, we take great pride in our web design and development services, striving to deliver exceptional results for our clients. Our commitment to excellence and customer satisfaction has earned us a solid reputation in the industry. But don't just take our word for it – let's hear what our clients have to say about their experience working with VoltageLabs.
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1] mr-7 lg:mr-0 md:mr-0 xl:mr-0">
+        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
+            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
+            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
+                VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.            </p>
+            <div class='flex flex-row'>
+                <img src="{% static 'images/people01.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
+                <div class='flex flex-col ml-4'>
+                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Martin Otumba</h4>
+                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>CEO Guruwritershub</p>
+                </div>
+            </div>
+        </div>
+        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
+            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
+            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
+                Working with VoltageLabs was a game-changer for my business. They not only created a visually stunning website but also optimized it for search engines. Thanks to their expertise, our online presence has grown, resulting in increased traffic and higher conversions.            <div class='flex flex-row'>
+                <img src="{% static 'images/people03.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
+                <div class='flex flex-col ml-4'>
+                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>John Roberts</h4>
+                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>Small Business Owner</p>
+                </div>
+            </div>
+        </div>
+        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
+            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
+            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
+                VoltageLabs provided exceptional support and guidance throughout the entire development process. Their team understood the unique needs of my e-commerce business and delivered a user-friendly website that perfectly captured our brand. I couldn't be happier with the results.
+            </p>
+            <div class='flex flex-row'>
+                <img src="{% static 'images/people02.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
+                <div class='flex flex-col ml-4'>
+                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Emily Thompson</h4>
+                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>E-commerce Entrepreneur</p>
+                </div>
+            </div>
+        </div>
+        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
+        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
+        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
+            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
+            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
+                The team at VoltageLabs is incredibly talented and professional. They transformed our outdated website into a modern, responsive masterpiece. Their commitment to meeting deadlines and delivering quality work sets them apart from other web design agencies. Highly recommended.
+            <div class='flex flex-row'>
+                <img src="{% static 'images/people04.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
+                <div class='flex flex-col ml-4'>
+                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Michael Lewis</h4>
+                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>CEO Saviour AI</p>
+                </div>
+            </div>
+        </div>
+        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
+            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
+            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
+                VoltageLabs provided exceptional support and guidance throughout the entire development process. Their team understood the unique needs of my e-commerce business and delivered a user-friendly website that perfectly captured our brand. I couldn't be happier with the results.
+            </p>
+            <div class='flex flex-row'>
+                <img src="{% static 'images/people05.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
+                <div class='flex flex-col ml-4'>
+                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Laura Ramirez</h4>
+                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>Safari NGO</p>
+                </div>
+            </div>
+        </div>
+        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
+            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
+            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
+                I wanted a website that showcased my photography in the best possible way, and VoltageLabs made it happen. Their keen eye for design and seamless integration of my portfolio exceeded my expectations. I'm thrilled with the results and constantly receive compliments on my website.
+            </p>
+            <div class='flex flex-row'>
+                <img src="{% static 'images/people06.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
+                <div class='flex flex-col ml-4'>
+                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Mark Johnson</h4>
+                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>Freelance Photographer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Testimonials Section -->
+
+<!-- Start our development Stack section -->
+<section id="stack" class="flex justify-center items-center sm:my-16 my-6 sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow sm:px-16 px-6 sm:py-12 py-4 mb-6 ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
+    <div class="flex-1 flex flex-col">
+      <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">Our development Stack</h2>
+      <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 section-title">At VoltageLabs, we have series of technologies under our disposal that we use to give you the best product. Here are a few technologies under our belt!
+
+      </p>
+      <div class="mt-5 sm:flex-col h-56 grid grid-cols-5 gap-2 content-center ">
+        <img src="{% static 'images/django.webp' %} " alt="Icon 1" class="w-20 h-20 mt-3 stat-figures">
+        <img src="{% static 'images/mongo.webp' %}" alt="Icon 2" class="w-20 h-20 mt-3 stat-figures">
+        <img src="{% static 'images/github.webp' %}" alt="Icon 3" class="w-20 h-20 mt-3 stat-figures">
+        <img src="{% static 'images/postgresql.webp' %}" alt="Icon 3" class="w-20 h-20 mt-3 stat-figures">
+        <img src="{% static 'images/tailwind.webp' %}" alt="Icon 3" class="w-20 h-20 mt-3 stat-figures">
+        <img src="{% static 'images/react.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
+        <img src="{% static 'images/php.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
+        <img src="{% static 'images/html.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
+        <img src="{% static 'images/mysql.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
+        <img src="{% static 'images/node.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
+      </div>
+    </div>
+</section>
+<!-- End Our development Stack section -->
+
+<!-- Start Projects Section -->
+
+<section id="portfolio" class="sm:py-16 py-6 flex justify-center items-center flex-col ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 relative">
+    <div class="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
+        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">What are our <br class="sm:block hidden"/> Our Recent Projects</h2>
+        <div class="w-full md:mt-0 mt-6">
+            <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] text-left max-w-[450px] banner-box">
+                Prepare to be inspired as you explore the diverse range of projects we've 
+                brought to life, each designed to electrify the online presence of our clients. With a team of 
+                skilled developers, designers, and strategists, we channel our creative energy into crafting 
+                captivating websites, dynamic web applications, and cutting-edge digital solutions. From sleek 
+                and responsive designs to seamless user experiences, our portfolio represents the power and 
+                expertise behind VoltageLabs.              </p>
+        </div>
+    </div>
+    
+    <div class="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1] mr-7 lg:mr-0 md:mr-0 xl:mr-0">
+        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
+            <a href="#">
+                <img src="{% static 'images/portfolio1.webp' %}" alt="project" class="rounded-t-lg stat-figures" />
+            </a>
+            <div class="p-3 mt-7">
+                <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
+                </a>
+                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
+                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+                </p>
+                <div class="flex flex-wrap">
+                    <a href="">
+                        <a href="https://www.guruwritershub.com/">
+                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
+            <a href="#">
+                <img src="{% static 'images/portfolio2.webp' %}" alt="project" class="rounded-t-lg stat-figures" />
+            </a>
+            <div class="p-3 mt-7">
+                <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
+                </a>
+                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
+                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+                </p>
+                <div class="flex flex-wrap">
+                    <a href="">
+                        <a href="https://www.guruwritershub.com/">
+                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
+            <a href="#">
+                <img src="{% static 'images/portfolio3.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
+            </a>
+            <div class="p-3 mt-7">
+                <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
+                </a>
+                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
+                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+                </p>
+                <div class="flex flex-wrap">
+                    <a href="">
+                        <a href="https://www.guruwritershub.com/">
+                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
+            <a href="#">
+                <img src="{% static 'images/portfolio4.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
+            </a>
+            <div class="p-3 mt-7">
+                <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
+                </a>
+                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
+                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+                </p>
+                <div class="flex flex-wrap">
+                    <a href="">
+                        <a href="https://www.guruwritershub.com/">
+                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
+        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
+        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
+            <a href="#">
+                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
+            </a>
+            <div class="p-3 mt-7">
+                <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
+                </a>
+                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
+                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+                </p>
+                <div class="flex flex-wrap">
+                    <a href="">
+                        <a href="https://www.guruwritershub.com/">
+                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
+            <a href="#">
+                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
+            </a>
+            <div class="p-3 mt-7">
+                <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
+                </a>
+                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
+                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+                </p>
+                <div class="flex flex-wrap">
+                    <a href="">
+                        <a href="https://www.guruwritershub.com/">
+                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Projects Section -->
+
+
+<!-- Start Get Quote form -->
+<section id="getQuoteform" class="sm:my-16 my-6 bg-black-gradient-2 rounded-[20px] box-shadow sm:px-16 px-6 sm:py-12 py-4 mb-6 ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
+    <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">Get your Quote Today!</h2>
+    <div id="error-box" class="flex p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800 hidden" role="alert">
+        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+        <span class="sr-only">Info</span>
+        <div>
+            <span class="font-medium">Alert!</span> Email addresses do not match.
+        </div>
+    </div>
+    <form class="banner-box" method="POST">
+        {% csrf_token %}
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="email" name="email" id="id_email" maxlength="255" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label for="id_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="email" name="confirm_email" maxlength="255" id="id_confirm_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label for="id_confirm_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm Email address</label>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="first_name" maxlength="255" id="id_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label for="id_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">First name</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="last_name" maxlength="255" id="id_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label for="id_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Last name</label>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="tex" maxlength="20" name="phone" id="id_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label for="id_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Phone number (+123-456-7890)</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="company" id="id_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label for="id_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Company/Business name</label>
+            </div>
+        </div>
+        <div class="relative z-0 w-full mb-6 group">
+            <input type="text" name="business_address" id="id_business_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+            <label for="id_business_address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Business location address</label>
+        </div>
+        <div class="relative z-0 w-full mb-6 group">
+            <label for="id_project_description" class="block font-barlow mb-2 text-sm font-medium text-gray-900 dark:text-white">Briefly, describe your project</label>
+            <textarea id="id_project_description" name="project_description" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-purple-500 focus:border-purple-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Enter your description..."></textarea>
+        </div>
+        <button id="get-quote-btn" type="submit" class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center" disabled>Get Quote</button>
+    </form>
+</section>
+<!-- End Get Quote form -->
+
+<!-- Start Footer Section -->
+<section class="banner-box flex justify-center items-center sm:py-16 py-6 flex-col ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
+    <div class="flex justify-center items-start md:flex-row flex-col mb-8 w-full">
+      <div class="flex-[1] flex flex-col justify-start mr-10">
+        <img src="{% static 'images/logo.png' %}" alt="voltagelabs" class="w-[200px] h-[72.14px] object-contain"/>
+        <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] mt-4 max-w-[310px]">
+          The modern way to kisckstart your online presence, with confidence, security and reliability.
+        </p>
+      </div>
+      <div class="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
+          <div class="flex flex-col ss:my-0 my-4 min-w-[150px]">
+            <h4 class="font-barlow font-medium text-[18px] leading-[27px] text-white">
+                Useful Links
+            </h4>
+            <ul class="list-none mt-4">
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Content
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    How it Works
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Create
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Explore
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Terms & Services
+                </li>
+            </ul>
+          </div>
+          <div class="flex flex-col ss:my-0 my-4 min-w-[150px]">
+            <h4 class="font-barlow font-medium text-[18px] leading-[27px] text-white">
+                Community
+            </h4>
+            <ul class="list-none mt-4">
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Help Center
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Partners
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Suggestions
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Blog
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Newsletters
+                </li>
+            </ul>
+          </div>
+          <div class="flex flex-col ss:my-0 my-4 min-w-[150px] mb-4">
+            <h4 class="font-barlow font-medium text-[18px] leading-[27px] text-white">
+                Partner
+            </h4>
+            <ul class="list-none mt-4">
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Our Partner
+                </li>
+                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                    Become a Partner
+                </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+      <div class="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3f3r45]">
+        <p class="font-barlow font-normal text-center text-[18px] leading-[27px] text-white">
+          2023 VoltageLabs. All Rights Reserved.
+        </p>
+        <div class="flex flex-row md:mt-0 mt-6">
+            <img src="{% static 'images/facebook.svg' %}" alt="facebook"  class="w-[21px] h-[21px] object-contain cursor-pointer mr-6"/>
+            <img src="{% static 'images/instagram.svg' %}" alt="instagram"  class="w-[21px] h-[21px] object-contain cursor-pointer mr-6"/>
+            <img src="{% static 'images/linkedin.svg' %}" alt="linkedin" class="w-[21px] h-[21px] object-contain cursor-pointer mr-6"/>
+            <img src="{% static 'images/twitter.svg' %}" alt="twitter" class="w-[21px] h-[21px] object-contain cursor-pointer mr-0"/>
+        </div>
+      </div>
+  </section>
+<!-- End Footer Section -->
+
+<!-- Start Scroll effect script -->
+<script>
+    //common reveal options to create reveal animations
+    ScrollReveal({
+      //reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+    //target elements, and specify options to create reveal animations.
+    ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.banner-box', { delay: 400, origin: 'right' });
+    ScrollReveal().reveal('.stat-figures', { delay: 500, origin: 'bottom', interval: 200 });
+
+    // Show error when email does not match and deactivate submit button.
+    const emailInput = document.getElementById('id_email');
+    const confirmEmailInput = document.getElementById('id_confirm_email');
+    const getQuoteBtn = document.getElementById('get-quote-btn');
+    const errorBox = document.getElementById('error-box');
+
+    emailInput.addEventListener('input', compareEmails);
+    confirmEmailInput.addEventListener('input', compareEmails);
+
+    function compareEmails() {
+        const email = emailInput.value;
+        const confirmEmail = confirmEmailInput.value;
+
+        if (email === confirmEmail) {
+            errorBox.classList.add('hidden');
+            getQuoteBtn.disabled = false;
+        } else {
+            errorBox.classList.remove('hidden');
+            getQuoteBtn.disabled = true;
+        }
+    }
+</script>
+<!-- End scroll effect script -->
+
+{% endblock content %}
