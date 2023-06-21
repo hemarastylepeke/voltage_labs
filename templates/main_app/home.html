@@ -86,7 +86,7 @@
 <!-- End Statistics section -->
 
 <!-- Start Services section -->
-<section id='about' class="flex md:flex-row flex-col sm:py-16 py-6">
+<section id='services' class="flex md:flex-row flex-col sm:py-16 py-6">
     <div class="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6">
       <div class='flex flex-row justify-between items-center w-full'>
         <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">
@@ -183,7 +183,8 @@
         <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
             <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
             <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.            </p>
+                VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+            </p>
             <div class='flex flex-row'>
                 <img src="{% static 'images/people01.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
                 <div class='flex flex-col ml-4'>
@@ -195,7 +196,9 @@
         <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
             <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
             <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                Working with VoltageLabs was a game-changer for my business. They not only created a visually stunning website but also optimized it for search engines. Thanks to their expertise, our online presence has grown, resulting in increased traffic and higher conversions.            <div class='flex flex-row'>
+                Working with VoltageLabs was a game-changer for my business. They not only created a visually stunning website but also optimized it for search engines. Thanks to their expertise, our online presence has grown, resulting in increased traffic and higher conversions.
+            </p>
+            <div class='flex flex-row'>
                 <img src="{% static 'images/people03.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
                 <div class='flex flex-col ml-4'>
                     <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>John Roberts</h4>
@@ -222,6 +225,7 @@
             <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
             <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
                 The team at VoltageLabs is incredibly talented and professional. They transformed our outdated website into a modern, responsive masterpiece. Their commitment to meeting deadlines and delivering quality work sets them apart from other web design agencies. Highly recommended.
+            </p>
             <div class='flex flex-row'>
                 <img src="{% static 'images/people04.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
                 <div class='flex flex-col ml-4'>
@@ -261,173 +265,380 @@
 <!-- End Testimonials Section -->
 
 <!-- Start our development Stack section -->
-<section id="stack" class="flex justify-center items-center sm:my-16 my-6 sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow sm:px-16 px-6 sm:py-12 py-4 mb-6 ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
-    <div class="flex-1 flex flex-col">
-      <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">Our development Stack</h2>
-      <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 section-title">At VoltageLabs, we have series of technologies under our disposal that we use to give you the best product. Here are a few technologies under our belt!
-
-      </p>
-      <div class="mt-5 sm:flex-col h-56 grid grid-cols-5 gap-2 content-center ">
-        <img src="{% static 'images/django.webp' %} " alt="Icon 1" class="w-20 h-20 mt-3 stat-figures">
-        <img src="{% static 'images/mongo.webp' %}" alt="Icon 2" class="w-20 h-20 mt-3 stat-figures">
-        <img src="{% static 'images/github.webp' %}" alt="Icon 3" class="w-20 h-20 mt-3 stat-figures">
-        <img src="{% static 'images/postgresql.webp' %}" alt="Icon 3" class="w-20 h-20 mt-3 stat-figures">
-        <img src="{% static 'images/tailwind.webp' %}" alt="Icon 3" class="w-20 h-20 mt-3 stat-figures">
-        <img src="{% static 'images/react.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
-        <img src="{% static 'images/php.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
-        <img src="{% static 'images/html.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
-        <img src="{% static 'images/mysql.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
-        <img src="{% static 'images/node.webp' %}" alt="Icon 3" class="w-20 h-20 mt-5 stat-figures">
-      </div>
+<section class="bg-primary">
+    <div class="px-4 py-8 mx-auto lg:py-16 items-center">
+        <div>
+            <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center">Our Development Stack</h2>
+        </div>
+        <p class="mb-10 text-lg font-barlow text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl lg:px-64 lg:mb-16 ">
+            At VoltageLabs, we have series of technologies under our disposal that we use to give you the best product. 
+            Here are a few technologies under our belt!
+        </p>
+        <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mt-12">
+            <a href="https://www.djangoproject.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/django.png' %} " alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Django python
+                </h3>
+            </a>
+            <a href="https://www.mongodb.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/mongo.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    MongoDB Database
+                </h3>
+            </a>
+            <a href="https://github.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/github.webp' %} " alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Github
+                </h3>
+            </a>
+            <a href="https://www.postgresql.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/postgresql.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    PostgreSQL Database
+                </h3>
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/tailwind.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Tailwind css
+                </h3>
+            </a>
+            <a href="https://react.dev/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/react.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    React
+                </h3>
+            </a>
+            <a href="https://laravel.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/laravel.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl  text-white mt-3.5">
+                    Laravel
+                </h3>
+            </a>
+            <a href="https://html5.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/html.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    HTML-5
+                </h3>
+            </a>
+            <a href="https://www.mysql.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/mysql.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    MySQL
+                </h3>
+            </a>
+            <a href="https://nodejs.org/en" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/node.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Node
+                </h3>
+            </a>
+            <a href="https://www.hubspot.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/Hubspot.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Hubspot
+                </h3>
+            </a>
+            <a href="https://getbootstrap.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/bootstrap.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Bootstrap
+                </h3>
+            </a>
+            <a href="https://rubyonrails.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/ruby.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Rails
+                </h3>
+            </a>
+            <a href="https://redis.io/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/redis.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Redis
+                </h3>
+            </a>
+            <a href="https://vuejs.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/vuejs.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl  text-white mt-3.5">
+                    Vue
+                </h3>
+            </a>
+            <a href="https://angular.io/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+                <img src="{% static 'images/angular.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
+                <h3 class="font-semibold text-xl text-white mt-3.5">
+                    Angular
+                </h3>
+            </a>
+        </div>
     </div>
 </section>
 <!-- End Our development Stack section -->
 
 <!-- Start Projects Section -->
-
-<section id="portfolio" class="sm:py-16 py-6 flex justify-center items-center flex-col ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 relative">
-    <div class="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">What are our <br class="sm:block hidden"/> Our Recent Projects</h2>
-        <div class="w-full md:mt-0 mt-6">
-            <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] text-left max-w-[450px] banner-box">
-                Prepare to be inspired as you explore the diverse range of projects we've 
-                brought to life, each designed to electrify the online presence of our clients. With a team of 
-                skilled developers, designers, and strategists, we channel our creative energy into crafting 
-                captivating websites, dynamic web applications, and cutting-edge digital solutions. From sleek 
-                and responsive designs to seamless user experiences, our portfolio represents the power and 
-                expertise behind VoltageLabs.              </p>
+<section id="portfolio" class="sm:my-16 my-6 rounded-[20px] box-shadow sm:px-0 px-0 sm:py-12 py-4 mb-6 ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
+    <div>
+        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center">Our work!</h2>
+        <p class="font-barlow font-normal text-dimWhite text-[18px] text-center mt-4">
+            Prepare to be inspired as you explore the diverse range of projects we've 
+            brought to life, each designed to electrify the online presence of our clients.
+        </p>
+    </div>
+    <div class="flex flex-col md:flex-row mt-10">
+        <div>
+            <a href="#">
+                <img src="{% static 'images/guru.png' %}" alt="project" class="stat-figures rounded-lg" />
+            </a>
+        </div>
+        <div class="md:ml-10 max-w-[550px]">
+            <div>
+                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Guruwritershub</h2>
+            </div>
+            
+            <div class="mb-4">
+                <a href="https://www.guruwritershub.com/" target="_blank" class="text-cyan-400">https://www.guruwritershub.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+            <div>
+                <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
+                    Guruwritershub helps bring freelance academic experts with Students seeking assignment help together.
+                    At Guruwritershub, experts can communicate with students, and offer assugnment help on their areas of expertise.
+                    User friendly and reliable backend technology used to build this website creates a comfortable and appealing navigation capabilities.
+                </p>
+            </div>
+            <div class="flex mt-8 mb-8">
+                <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/hubspot.png' %}" alt="icon" title="Hubspot" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/postgre.png' %}" title="Postgresql" alt="icon" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/bootstrap.png' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
+            </div>
+            <div class="mt-4">
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    View case Study
+                    <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
         </div>
     </div>
+    <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
+    <div class="flex flex-col md:flex-row mt-8">
+        <div class="md:w-1/2 md:order-2">
+            <a href="#">
+                <img src="{% static 'images/voltage.png' %}" alt="project" class="stat-figures rounded-lg" />
+            </a>
+        </div>
+        <div class="md:w-1/2 md:order-1">
+            <div class="max-w-[550px]">
+                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">VoltageLabs</h2>
+                <div class="mb-4">
+                    <a href="#" target="_blank" class="text-cyan-400">https://www.voltageitlabs.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+                <div>
+                    <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
+                        Are you looking to create an impactful online presence that captivates your audience and drives business growth? 
+                        Look no further than Voltage Labs, the premier web development agency that delivers cutting-edge solutions tailored 
+                        to your unique needs. Voltagelabs website has been developed with security and user frendliness in mind of the developers and product maerketers.
+                    </p>
+                </div>
+                <div class="flex mt-8 mb-8">
+                    <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/tailwind.webp' %}" alt="icon" title="Tailwind css" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/postgre.png' %}" alt="icon" title="Postgresql" class="w-7 h-7"/>
+                </div>
+                <div class="mt-4">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        View case Study
+                        <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>    
     
-    <div class="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1] mr-7 lg:mr-0 md:mr-0 xl:mr-0">
-        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
+    <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
+    <div class="flex flex-col md:flex-row mt-8">
+        <div>
             <a href="#">
-                <img src="{% static 'images/portfolio1.webp' %}" alt="project" class="rounded-t-lg stat-figures" />
+                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-lg" />
             </a>
-            <div class="p-3 mt-7">
-                <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
-                </a>
-                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
-                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
-                </p>
-                <div class="flex flex-wrap">
-                    <a href="">
-                        <a href="https://www.guruwritershub.com/">
-                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
-                        </a>
-                    </a>
-                </div>
-            </div>
         </div>
-
-        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
-            <a href="#">
-                <img src="{% static 'images/portfolio2.webp' %}" alt="project" class="rounded-t-lg stat-figures" />
-            </a>
-            <div class="p-3 mt-7">
-                <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
-                </a>
-                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
-                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
-                </p>
-                <div class="flex flex-wrap">
-                    <a href="">
-                        <a href="https://www.guruwritershub.com/">
-                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
-                        </a>
-                    </a>
-                </div>
+        <div class="md:ml-10 max-w-[550px]">
+            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Unit Store</h2>
+            <div class="mb-4">
+                <a href="#" target="_blank" class="text-cyan-400">https://www.unitstorewebsite.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
             </div>
-        </div>
-
-        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
-            <a href="#">
-                <img src="{% static 'images/portfolio3.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
-            </a>
-            <div class="p-3 mt-7">
-                <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
-                </a>
-                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
-                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
+            <div>
+                <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
+                    Unit Store website is a website that is used to share learning materials among students and teachers. 
+                    This website can be used by Teachers and Students to create a library of reference materials where the information 
+                    can then be accessed easily by any one who has access rights to this particular file. This website was designed in
+                    order to help create a common platform where students and teachers can share information and receive responses.
                 </p>
-                <div class="flex flex-wrap">
-                    <a href="">
-                        <a href="https://www.guruwritershub.com/">
-                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
-                        </a>
-                    </a>
-                </div>
             </div>
-        </div>
-
-        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
-            <a href="#">
-                <img src="{% static 'images/portfolio4.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
-            </a>
-            <div class="p-3 mt-7">
-                <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
-                </a>
-                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
-                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
-                </p>
-                <div class="flex flex-wrap">
-                    <a href="">
-                        <a href="https://www.guruwritershub.com/">
-                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
-                        </a>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
-        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
-        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
-            <a href="#">
-                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
-            </a>
-            <div class="p-3 mt-7">
-                <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
-                </a>
-                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
-                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
-                </p>
-                <div class="flex flex-wrap">
-                    <a href="">
-                        <a href="https://www.guruwritershub.com/">
-                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
-                        </a>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 feedback-card w-[350px] h-[550px] mt-7">
-            <a href="#">
-                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-t-lg" />
-            </a>
-            <div class="p-3 mt-7">
-                <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white stat-figures">Guruwritershub</h5>
-                </a>
-                <p class="font-barlow mb-3 font-normal text-dimWhite stat-figures">
-                    VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
-                </p>
-                <div class="flex flex-wrap">
-                    <a href="">
-                        <a href="https://www.guruwritershub.com/">
-                            <button class="stat-figures get-quote-btn-grad font-barlow rounded-md text-[18px] inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white">Read More</button>
-                        </a>
-                    </a>
-                </div>
+            <div class="flex mt-8 mb-8">
+                <img src="{% static 'images/js.png' %}" alt="icon" title="JavaScript" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/sql-server.png' %}" alt="icon" title="SQL Server" class="w-7 h-7 mr-4"/>
+                <img src="{% static 'images/bootstrap.png' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
+            </div>            
+            <div class="mt-4">
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    View case Study
+                    <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
             </div>
         </div>
     </div>
+    <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
+    <div class="flex flex-col md:flex-row mt-8">
+        <div class="md:w-1/2 md:order-2">
+            <a href="#">
+                <img src="{% static 'images/portfolio.png' %}" alt="project" class="stat-figures rounded-lg" />
+            </a>
+        </div>
+        <div class="md:w-1/2 md:order-1">
+            <div class="max-w-[550px]">
+                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">Portfolio</h2>
+                <div class="mb-4">
+                    <a href="https://hemarastylepeke.github.io/" target="_blank" class="text-cyan-400">https://hemarastylepeke.github.io/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+                <div>
+                    <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
+                        This is the first static website that was developed by Voltage Labs. This portfolio was designed specifically for project 
+                        referencing and a proof of concept in the specified field of expertise. The development of this website wasn't that complex, and the 
+                        development stack utilized the foundational programming languages in web development. If you don't understand the basics, you can't build something complex.
+                    </p>
+                </div>
+                <div class="flex mt-8 mb-8">
+                    <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7"/>
+                </div>
+                <div class="mt-4">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        View case Study
+                        <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>    
 </section>
 <!-- End Projects Section -->
+
+<!-- Start Blog Section -->
+<section id="blog" class="bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+            <div>
+                <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center">Browse our Blog</h2>
+            </div>
+            <p class="font-light sm:text-xl text-white">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
+        </div> 
+        <div class="grid gap-8 lg:grid-cols-2">
+            <article class="p-6 rounded-lg border shadow-md bg-gray-800 border-gray-700">
+                <div class="flex justify-between items-center mb-5 text-gray-500">
+                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                        Tutorial
+                    </span>
+                    <span class="text-sm">14 days ago</span>
+                </div>
+                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">How to quickly deploy a static website</a></h2>
+                <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" />
+                        <span class="font-medium dark:text-white">
+                            Jese Leos
+                        </span>
+                    </div>
+                    <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </article> 
+            <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div class="flex justify-between items-center mb-5 text-gray-500">
+                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
+                        Article
+                    </span>
+                    <span class="text-sm">14 days ago</span>
+                </div>
+                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Our first project with React</a></h2>
+                <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Green avatar" />
+                        <span class="font-medium dark:text-white">
+                            Bonnie Green
+                        </span>
+                    </div>
+                    <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </article>
+            <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div class="flex justify-between items-center mb-5 text-gray-500">
+                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
+                        Article
+                    </span>
+                    <span class="text-sm">14 days ago</span>
+                </div>
+                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Our first project with React</a></h2>
+                <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Green avatar" />
+                        <span class="font-medium dark:text-white">
+                            Bonnie Green
+                        </span>
+                    </div>
+                    <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </article>
+            <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div class="flex justify-between items-center mb-5 text-gray-500">
+                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
+                        Article
+                    </span>
+                    <span class="text-sm">14 days ago</span>
+                </div>
+                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Our first project with React</a></h2>
+                <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Green avatar" />
+                        <span class="font-medium dark:text-white">
+                            Bonnie Green
+                        </span>
+                    </div>
+                    <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                        Read more
+                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </article>                    
+        </div>  
+    </div>
+</section>
+<!-- End Blog Section -->
 
 
 <!-- Start Get Quote form -->
@@ -567,6 +778,9 @@
       </div>
   </section>
 <!-- End Footer Section -->
+<button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-secondary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-purple-900 hover:shadow-lg focus:bg-secondary focus:shadow-lg focus:outline-none focus:ring-0 active:hover:bg-purple-900 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+</button>
 
 <!-- Start Scroll effect script -->
 <script>
@@ -574,9 +788,19 @@
     ScrollReveal({
       //reset: true,
       distance: '60px',
-      duration: 2500,
-      delay: 400
+      duration: 800,
+      delay: 200
     });
+
+    // Code to allow scrolling to a section when clicked.
+    function scrollToSection(event, sectionId) {
+    event.preventDefault(); // Prevent default link behavior
+
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+    };
+
+
     //target elements, and specify options to create reveal animations.
     ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
     ScrollReveal().reveal('.banner-box', { delay: 400, origin: 'right' });
@@ -602,6 +826,33 @@
             errorBox.classList.remove('hidden');
             getQuoteBtn.disabled = true;
         }
+    };
+
+    // Scroll back to top button.
+    // Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+    scrollFunction();
+    };
+
+    function scrollFunction() {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     }
 </script>
 <!-- End scroll effect script -->

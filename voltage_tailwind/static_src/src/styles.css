@@ -175,3 +175,8 @@
 .get-quote-btn-grad:hover {
   background-image: linear-gradient(to bottom right,#0f0114, #B318EA);
 } 
+
+#btn-back-to-top {
+  position: fixed;
+  display: none;
+}
