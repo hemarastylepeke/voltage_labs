@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-p-t+o45im!_+t==fpnc!!!r@yp((s!6=%*#1t4oeh3q$@d6e#*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "a725-102-220-12-50.ngrok-free.app"]
+ALLOWED_HOSTS = ["e5129945-7eac-43bb-971f-82a7b3775d7d"]
 
 # Application definition
 
@@ -134,5 +134,5 @@ TAILWIND_APP_NAME = 'voltage_tailwind'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+# NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
