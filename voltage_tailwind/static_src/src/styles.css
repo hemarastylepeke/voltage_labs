@@ -180,3 +180,13 @@
   position: fixed;
   display: none;
 }
+
+.display-none {
+  @apply hidden;
+}
+
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+  width: 0.6em; /* Adjust the width as needed */
+}
+

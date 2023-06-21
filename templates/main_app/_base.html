@@ -1,4 +1,6 @@
 {% load static tailwind_tags %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,53 +20,58 @@
     
     <title>Home - VoltageLabs</title>
 </head>
-<body class="bg-primary">
-    <!-- Start Navbar -->
-    <nav>
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="{% url 'home' %}" class="flex items-center">
-                <img src="{% static 'images/logo.png' %}" class="h-8 mr-3 md:ml-[45px] lg:ml-[45px] xl:ml-[45px] sm:ml-[45px]" alt="voltagelabs" />
-            </a>
-            <div class="flex md:order-2">
-                <a href="#getQuoteform" onclick="scrollToSection(event, 'getQuoteform')">
-                    <button type="button" class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-5 lg:mr-6 xl:mr-6">Get Quote</button>
+<body class="dark:bg-gray-900">
+        <!-- Start Navbar -->
+        
+        <nav class="bg-white dark:bg-gray-900 fixed w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600 z-20">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="{% url 'home' %}" class="flex items-center">
+                    <img src="{% static 'images/logo.png' %}" class="h-8" alt="voltagelabs" />
                 </a>
-                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-secondary rounded-lg md:hidden dark:text-white" aria-controls="navbar-cta" aria-expanded="false">
+                <div class="flex items-center justify-between md:order-2">
+                    <img src="{% static 'images/moon.svg' %}" class="moon cursor-pointer h-5 w-5 mr-3" alt="moon" />
+                    <img src="{% static 'images/sun.svg' %}" class="sun cursor-pointer h-5 w-5 mr-3" alt="sun" />
+                    <a href="#getQuoteform" onclick="scrollToSection(event, 'getQuoteform')">
+                        <button type="button" class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-5 lg:mr-6 xl:mr-6">Get Quote</button>
+                    </a>                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                </button>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#about" class="block py-2 pl-3 pr-4 text-white bg-secondary rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-secondary" aria-current="page">About</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-primary md:bg-primary dark:border-gray-700 text-white">
-                    <li>
-                        <a href="#about" onclick="scrollToSection(event, 'about')" class="text-white font-barlow block py-2 pl-3 pr-4 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:text-white md:dark:hover:bg-secondary dark:border-secondary lg:dark:hover:bg-transparent lg:dark:hover:text-secondary">About</a>
-                    </li>
-                    <li>
-                        <a href="#services" onclick="scrollToSection(event, 'services')" class="text-white font-barlow block py-2 pl-3 pr-4 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:text-white md:dark:hover:bg-secondary dark:border-secondary lg:dark:hover:bg-transparent lg:dark:hover:text-secondary">Services</a>
-                    </li>
-                    <li>
-                        <a href="#testimonials" onclick="scrollToSection(event, 'testimonials')" class="text-white font-barlow block py-2 pl-3 pr-4 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:text-white md:dark:hover:bg-secondary dark:border-secondary lg:dark:hover:bg-transparent lg:dark:hover:text-secondary">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" onclick="scrollToSection(event, 'portfolio')" class="text-white font-barlow block py-2 pl-3 pr-4 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:text-white md:dark:hover:bg-secondary dark:border-secondary lg:dark:hover:bg-transparent lg:dark:hover:text-secondary">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#blog" onclick="scrollToSection(event, 'blog')" class="text-white font-barlow block py-2 pl-3 pr-4 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:text-white md:dark:hover:bg-secondary dark:border-secondary lg:dark:hover:bg-transparent lg:dark:hover:text-secondary">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>  
+    </nav>
     <!-- End Navbar -->
     {% block content %}
         
     {% endblock content %}
 </body>
+<!-- Local javascript to allow dark mode toggling -->
+<script src="{% static 'js/app.js' %}"></script>
+
 <script>
-    // Script to allow toggling.
+    // Script to allow Navbar toggling.
     document.addEventListener("DOMContentLoaded", function() {
-        var toggleButton = document.querySelector("[data-collapse-toggle='navbar-cta']");
-        var navbarContent = document.getElementById("navbar-cta");
+        var toggleButton = document.querySelector("[data-collapse-toggle='navbar-sticky']");
+        var navbarContent = document.getElementById("navbar-sticky");
 
         toggleButton.addEventListener("click", function() {
             navbarContent.classList.toggle("hidden");

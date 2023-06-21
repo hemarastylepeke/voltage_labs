@@ -2,8 +2,8 @@
 {% load static %}
 {% block content %}
 <!-- Start Hero section -->
-<section id='about' class="flex md:flex-row flex-col sm:py-16 py-6 hero-container">
-    <div class="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6">
+<section id='about' class="flex md:flex-row flex-col sm:py-16 py-6">
+    <div class="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6 pt-20">
       <div class='flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 discount-banner'>
         <img src="{% static 'images/Discount.webp' %}" alt="discount" class='w-[32px] h-[32px] section-title'/>
         <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] ml-2 section-title">
@@ -15,12 +15,12 @@
       </div>
       <div class='flex flex-row justify-between items-center w-full'>
         <h1 class='flex-1 font-barlow font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px] main-title'>
-            Bring <br class='sm:block hidden'/>
+            <span class="text-gray-900 dark:text-white">Bring</span> <br class='sm:block hidden'/>
             <span class='text-gradient'>Your Idea,</span>
         </h1>
         <div class='ss:flex hidden md:mr-4 mr-0 animate-vertical'>
             <div class="flex justify-center items-center w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer" >
-                <div class="flex justify-center items-center flex-col bg-primary w-[100%] h-[100%] rounded-full">
+                <div class="flex justify-center items-center flex-col bg-white dark:bg-gray-900 w-[100%] h-[100%] rounded-full">
                     <span class="animate-ping absolute inline-flex h-20 w-20 rounded-full bg-sky-400 opacity-75"></span>
                     <div class="flex justify-center items-start flex-row">
                         <p class="font-barlow font-medium text-[18px] leading-[23px] mr-2">
@@ -35,23 +35,20 @@
             </div>
         </div>
       </div>
-      <h1 class='font-barlow font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full main-title'>
+      <h1 class='text-gray-900 dark:text-white font-barlow font-semibold ss:text-[68px] text-[52px] ss:leading-[100px] leading-[75px] w-full main-title'>
         We’ll handle the rest.
       </h1>
-      <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 section-title">
+      <p class="font-barlow font-normal text-gray-900 dark:text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 section-title">
         Elevate your digital footprint with VoltageLabs, a leading <strong>web development agency</strong> empowering 
         businesses for success in the online world.
       </p>
     </div>
-    <div class="flex-1 flex justify-center items-center md:my-0 my-10 relative image">
-        <img src="{% static 'images/banner.webp' %}" alt="design" class='w-[100%] h-[100%] relative z-[5] mr-0 md:mr-[70px] md:ml-0 ml-[7px] banner-box'/>
-        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
-        <div class='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 top-0 white__gradient'></div>
-        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
-    </div>
+    <div class="flex-1 flex justify-center items-center md:my-0 my-10 relative">
+        <img src="{% static 'images/banner.webp' %}" alt="design" class="w-full h-auto md:max-w-full md:h-auto banner-box" />
+    </div>    
     <div class="ss:hidden flex justify-center items-center animate-vertical">
         <div class="flex justify-center items-center w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer" >
-            <div class="flex justify-center items-center flex-col bg-primary w-[100%] h-[100%] rounded-full">
+            <div class="flex justify-center items-center flex-col bg-white dark:bg-gray-900 w-[100%] h-[100%] rounded-full">
               <div class="flex justify-center items-start flex-row">
                 <span class="animate-ping absolute inline-flex h-20 w-20 rounded-full bg-sky-400 opacity-75"></span>
                 <p class="font-barlow font-medium text-[18px] leading-[23px] mr-2">
@@ -71,29 +68,29 @@
 <!-- Start Statistics section -->
 <section class="flex justify-center items-center flex-row flex-wrap sm:mb-20 mb-6 md:ml-[45px] lg:ml-[45px] xl:ml-[45px] sm:ml-[45px] ">
     <div class="flex-1 flex justify-start items-center flex-row m-3 stat-figures">
-        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white">200+</h4>
+        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] dark:text-white text-gray-900">200+</h4>
         <p class="font-barlow font-normal xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3">Websites Designed</p>
     </div>
     <div class="flex-1 flex justify-start items-center flex-row m-3 stat-figures">
-        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white">150+</h4>
+        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] dark:text-white text-gray-900">150+</h4>
         <p class="font-barlow font-normal xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3">Happy Clients</p>
     </div>
     <div class="flex-1 flex justify-start items-center flex-row m-3 stat-figures">
-        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white">300+</h4>
+        <h4 class="font-barlow font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] dark:text-white text-gray-900">300+</h4>
         <p class="font-barlow font-normal xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3">Websites Maintained</p>
     </div>
 </section>
 <!-- End Statistics section -->
 
 <!-- Start Services section -->
-<section id='services' class="flex md:flex-row flex-col sm:py-16 py-6">
+<section id='services' class="flex md:flex-row flex-col sm:py-16 py-6 dark:bg-gray-800 border-b border-t border-gray-100 dark:border-gray-700">
     <div class="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6">
       <div class='flex flex-row justify-between items-center w-full'>
-        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">
+        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white text-gray-900 xs:leading-[76.8px] leading-[66.8px] w-full main-title">
             Our <br class="sm:block hidden"/> Comprehensive Services.
         </h2>
       </div>
-      <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 image section-title">
+      <p class="font-barlow font-normal text-gray-900 dark:text-white text-[18px] leading-[30.8px] max-w-[470px] mt-5 image section-title">
         At VoltageLabs, we understand the crucial role that a visually stunning and user-friendly website plays in today's digital landscape. With our expertise in the field, we strive to transform your online presence into a captivating and dynamic platform that drives engagement, enhances your brand identity, and maximizes your online success. <br />
         As a leading web design and development company, we take pride in our ability to blend creativity and technical proficiency seamlessly. Our team of highly skilled designers and developers are adept at crafting unique, tailor-made solutions that align with your specific business goals and objectives. We believe that every website should be a reflection of your brand's essence, and our services are centered around achieving just that. <br />
         By offering the services listed, we go beyond the technical aspects of web development and focus on a holistic approach, helping you make informed decisions and strategies that will drive your digital growth and achieve your desired outcomes.
@@ -138,8 +135,6 @@
                 </p>
             </div>
         </div>
-        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
-        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
         <div class="flex flex-row p-6 rounded-[20px] service-card mr-10 mb-6 sm:ml-16 ml-7 xl:ml-0 lg:ml-0 md:ml-0 banner-box">
             <div class="w-[64px] h-[64px] rounded-full flex justify-center items-center bg-dimBlue">
                 <img src="{% static 'images/consultation.webp' %}" alt="icon" class="w-[50%] h-[50%] object-contain"/>
@@ -169,205 +164,110 @@
 </section>
 <!-- End Services section -->
 
-<!-- Start Testimonials Section -->
-<section id="testimonials" class="sm:py-16 py-6 flex justify-center items-center flex-col ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 relative">
-    <div class="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">What are our <br class="sm:block hidden"/> Happy Clients saying</h2>
-        <div class="w-full md:mt-0 mt-6">
-            <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] text-left max-w-[450px] banner-box">
-                At VoltageLabs, we take great pride in our web design and development services, striving to deliver exceptional results for our clients. Our commitment to excellence and customer satisfaction has earned us a solid reputation in the industry. But don't just take our word for it – let's hear what our clients have to say about their experience working with VoltageLabs.
-            </p>
-        </div>
-    </div>
-    <div class="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1] mr-7 lg:mr-0 md:mr-0 xl:mr-0">
-        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
-            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
-            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                VoltageLabs brought our vision to life with an outstanding website design. Their creativity and attention to detail surpassed our expectations. We highly recommend them for anyone seeking top-notch web development services.
-            </p>
-            <div class='flex flex-row'>
-                <img src="{% static 'images/people01.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
-                <div class='flex flex-col ml-4'>
-                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Martin Otumba</h4>
-                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>CEO Guruwritershub</p>
-                </div>
-            </div>
-        </div>
-        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
-            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
-            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                Working with VoltageLabs was a game-changer for my business. They not only created a visually stunning website but also optimized it for search engines. Thanks to their expertise, our online presence has grown, resulting in increased traffic and higher conversions.
-            </p>
-            <div class='flex flex-row'>
-                <img src="{% static 'images/people03.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
-                <div class='flex flex-col ml-4'>
-                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>John Roberts</h4>
-                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>Small Business Owner</p>
-                </div>
-            </div>
-        </div>
-        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
-            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
-            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                VoltageLabs provided exceptional support and guidance throughout the entire development process. Their team understood the unique needs of my e-commerce business and delivered a user-friendly website that perfectly captured our brand. I couldn't be happier with the results.
-            </p>
-            <div class='flex flex-row'>
-                <img src="{% static 'images/people02.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
-                <div class='flex flex-col ml-4'>
-                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Emily Thompson</h4>
-                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>E-commerce Entrepreneur</p>
-                </div>
-            </div>
-        </div>
-        <div class='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
-        <div class='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient'></div>
-        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
-            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
-            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                The team at VoltageLabs is incredibly talented and professional. They transformed our outdated website into a modern, responsive masterpiece. Their commitment to meeting deadlines and delivering quality work sets them apart from other web design agencies. Highly recommended.
-            </p>
-            <div class='flex flex-row'>
-                <img src="{% static 'images/people04.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
-                <div class='flex flex-col ml-4'>
-                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Michael Lewis</h4>
-                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>CEO Saviour AI</p>
-                </div>
-            </div>
-        </div>
-        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
-            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
-            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                VoltageLabs provided exceptional support and guidance throughout the entire development process. Their team understood the unique needs of my e-commerce business and delivered a user-friendly website that perfectly captured our brand. I couldn't be happier with the results.
-            </p>
-            <div class='flex flex-row'>
-                <img src="{% static 'images/people05.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
-                <div class='flex flex-col ml-4'>
-                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Laura Ramirez</h4>
-                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>Safari NGO</p>
-                </div>
-            </div>
-        </div>
-        <div class='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[400px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card w-[350px]'>
-            <img src="{% static 'images/quotes.webp' %}" alt="double_quotes" class='w-[42.6px] h-[27.6px] object-contain stat-figures'/>
-            <p class='font-barlow font-normal text-[18px] leading-[32.4px] text-white my-10 stat-figures'>
-                I wanted a website that showcased my photography in the best possible way, and VoltageLabs made it happen. Their keen eye for design and seamless integration of my portfolio exceeded my expectations. I'm thrilled with the results and constantly receive compliments on my website.
-            </p>
-            <div class='flex flex-row'>
-                <img src="{% static 'images/people06.webp' %}" alt="testimonial1" class='w-[48px] h-[48px] rounded-full stat-figures' />
-                <div class='flex flex-col ml-4'>
-                    <h4 class='font-barlow font-semibold text-[20px] leading-[32px] text-white stat-figures'>Mark Johnson</h4>
-                    <p class='font-barlow font-normal text-[16px] leading-[24px] text-dimWhite stat-figures'>Freelance Photographer</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Testimonials Section -->
-
 <!-- Start our development Stack section -->
-<section class="bg-primary">
+<section class="border-b border-gray-100 dark:border-gray-700">
     <div class="px-4 py-8 mx-auto lg:py-16 items-center">
         <div>
-            <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center">Our Development Stack</h2>
+            <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center dark:text-white text-gray-900">Our Development Stack</h2>
         </div>
-        <p class="mb-10 text-lg font-barlow text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl lg:px-64 lg:mb-16 ">
+        <p class="mb-10 text-lg font-barlow text-gray-900 dark:text-white lg:text-center lg:text-xl lg:px-64 lg:mb-16 ">
             At VoltageLabs, we have series of technologies under our disposal that we use to give you the best product. 
             Here are a few technologies under our belt!
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mt-12">
-            <a href="https://www.djangoproject.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://www.djangoproject.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/django.png' %} " alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
-                    Django python
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
+                    Django
                 </h3>
             </a>
-            <a href="https://www.mongodb.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://www.mongodb.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/mongo.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     MongoDB Database
                 </h3>
             </a>
-            <a href="https://github.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://github.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/github.webp' %} " alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Github
                 </h3>
             </a>
-            <a href="https://www.postgresql.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://www.postgresql.org/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/postgresql.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     PostgreSQL Database
                 </h3>
             </a>
-            <a href="https://tailwindcss.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://tailwindcss.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/tailwind.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Tailwind css
                 </h3>
             </a>
-            <a href="https://react.dev/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://react.dev/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/react.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     React
                 </h3>
             </a>
-            <a href="https://laravel.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://laravel.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/laravel.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl  text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Laravel
                 </h3>
             </a>
-            <a href="https://html5.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://html5.org/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/html.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     HTML-5
                 </h3>
             </a>
-            <a href="https://www.mysql.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://www.mysql.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/mysql.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     MySQL
                 </h3>
             </a>
-            <a href="https://nodejs.org/en" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://nodejs.org/en" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/node.webp' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Node
                 </h3>
             </a>
-            <a href="https://www.hubspot.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://www.hubspot.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/Hubspot.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Hubspot
                 </h3>
             </a>
-            <a href="https://getbootstrap.com/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://getbootstrap.com/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/bootstrap.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Bootstrap
                 </h3>
             </a>
-            <a href="https://rubyonrails.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://rubyonrails.org/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/ruby.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Rails
                 </h3>
             </a>
-            <a href="https://redis.io/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://redis.io/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/redis.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Redis
                 </h3>
             </a>
-            <a href="https://vuejs.org/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://vuejs.org/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/vuejs.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl  text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Vue
                 </h3>
             </a>
-            <a href="https://angular.io/" target="_blank" class="block px-8 py-12 text-center bg-gray-700 border border-gray-600 rounded-lg shadow-sm dark:bg-gray-700 hover:shadow-lg dark:hover:shadow-lg-light">
+            <a href="https://angular.io/" target="_blank" class="block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light">
                 <img src="{% static 'images/angular.png' %}" alt="Icon 1" class="w-20 h-20 mt-3 mx-auto text-blue-500" viewBox="0 0 512 512">
-                <h3 class="font-semibold text-xl text-white mt-3.5">
+                <h3 class="font-semibold text-xl text-gray-950 dark:text-white mt-3.5">
                     Angular
                 </h3>
             </a>
@@ -376,79 +276,188 @@
 </section>
 <!-- End Our development Stack section -->
 
+<!-- Start Testimonials Section -->
+<section id="testimonials" class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm">
+            <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center dark:text-white text-gray-900">What are our happy Clients saying?</h2>
+            <p class="mb-8 text-lg font-barlow text-gray-950 lg:mb-16 sm:text-xl dark:text-white">
+                At VoltageLabs, we take great pride in our web design and development services, striving to deliver exceptional results for our clients. Our commitment to excellence and customer satisfaction has earned us a solid reputation in the industry. But don't just take our word for it – let's hear what our clients have to say about their experience working with VoltageLabs.
+            </p>
+        </div> 
+        <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold font-barlow text-secondary">"Exceptional Service and Innovative Solutions!"</h3>
+                    <p class="my-4 font-barlow">
+                        "Voltage Labs exceeded my expectations in every aspect of our collaboration. From the very beginning, their team 
+                        demonstrated a deep understanding of our web development needs and provided us with exceptional service. 
+                        They not only delivered a beautifully designed website but also incorporated innovative solutions that boosted 
+                        our online presence. Their attention to detail, professionalism, and technical expertise are truly commendable. 
+                        
+                    </p>
+                    <p class="my-4 font-barlow">I highly recommend Voltage Labs for anyone seeking top-notch web development services."</p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    <img class="w-9 h-9 rounded-full" src="{% static 'images/people01.webp' %}" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>Martin Otumba</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">CEO Guruwritershub</div>
+                    </div>
+                </figcaption>    
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold font-barlow text-secondary">"Efficient and Reliable Web Development Partner"</h3>
+                    <p class="my-4 font-barlow">
+                        "Working with Voltage Labs has been an absolute pleasure. Their team proved to be highly efficient and reliable throughout 
+                        the entire web development process. From initial concept discussions to the final launch, they consistently 
+                        delivered on time and within budget. Their attention to our specific requirements and their ability to 
+                        translate them into an impressive website truly impressed us.
+                    </p>
+                    <p class="my-4 font-barlow">
+                        I am incredibly satisfied with Voltage Labs and 
+                        would undoubtedly choose them again for any future web development needs."
+                    </p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    <img class="w-9 h-9 rounded-full" src="{% static 'images/quotes.webp' %}" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>John Roberts</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">Small Business Owner</div>
+                    </div>
+                </figcaption>    
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 lg:border-b-0 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold font-barlow text-secondary">"Incredible Design and User Experience"</h3>
+                    <p class="my-4 font-barlow">
+                        "Voltage Labs transformed our website into a masterpiece! The design and user experience they created are simply incredible. 
+                        Our visitors now have a seamless and intuitive journey through our site, which has resulted in increased engagement and 
+                        conversions. The team at Voltage Labs possesses an exceptional eye for aesthetics and an in-depth understanding of user 
+                        behavior. Their expertise in web development truly shines through their exceptional design work. 🤯.
+                    </p>
+                    <p class="my-4 font-barlow">
+                        We are thrilled with the outcome and highly recommend Voltage Labs to anyone seeking visually stunning and user-friendly websites."
+                    </p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    <img class="w-9 h-9 rounded-full" src="{% static 'images/people02.webp' %}" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>Emily Thompson</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">E-commerce Entrepreneur</div>
+                    </div>
+                </figcaption>    
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold font-barlow text-secondary">"Responsive and Proactive Team"</h3>
+                    <p class="my-4 font-barlow">
+                       "Voltage Labs demonstrated their commitment to client satisfaction through their responsive and proactive approach. 
+                       Throughout the project, they were readily available to address any queries or concerns we had, ensuring clear and effective 
+                       communication at all times. Their team also went the extra mile by providing valuable suggestions and recommendations 
+                       to enhance our website's functionality and performance. 
+                    </p>
+                    <p class="my-4 font-barlow">
+                        Voltage Labs' dedication to delivering top-quality service 
+                        and their ability to exceed expectations make them an excellent choice for web development needs."</p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    <img class="w-9 h-9 rounded-full" src="{% static 'images/people04.webp' %}" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>Michael Lewis</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">CEO Saviour AI</div>
+                    </div>
+                </figcaption>    
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-t border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold font-barlow text-secondary">"Cutting-Edge Technology and Scalability"</h3>
+                    <p class="my-4 font-barlow">
+                        "Voltage Labs impressed us with their utilization of cutting-edge technology and their emphasis on scalability. 
+                        They developed a website that not only meets our current needs but is also future-proofed for growth. The team at 
+                        Voltage Labs leveraged their extensive knowledge of the latest web development trends to create a robust and 
+                        scalable platform that can easily adapt to our evolving requirements.  
+                        
+                    </p>
+                    <p class="my-4 font-barlow">Their foresight and technical expertise set them apart as a reliable and forward-thinking web development company."</p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    <img class="w-9 h-9 rounded-full" src="{% static 'images/people05.webp' %}" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>Laura Ramirez</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">Safari NGO</div>
+                    </div>
+                </figcaption>    
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-t border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold font-barlow text-secondary">"Professionalism at Its Finest"</h3>
+                    <p class="my-4 font-barlow">
+                        "Working with Voltage Labs was a seamless experience from start to finish. Their professionalism and attention to 
+                        detail were evident in every interaction and deliverable. The project was executed with utmost precision, and
+                        their team consistently demonstrated a deep understanding of our brand identity and vision. Voltage Labs' commitment 
+                        to excellence and their ability to deliver outstanding results make them a standout choice in the web development industry.
+                    </p>
+                    <p class="my-4 font-barlow">
+                        I wholeheartedly recommend their services to anyone in need of a professional and reliable partner."
+                    </p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3">
+                    <img class="w-9 h-9 rounded-full" src="{% static 'images/people06.webp' %}" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div>Mark Johnson</div>
+                        <div class="text-sm font-light text-gray-500 dark:text-gray-400">Freelance Photographer</div>
+                    </div>
+                </figcaption>    
+            </figure>
+        </div>
+        <div class="text-center">
+            <a href="#" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Show more...</a> 
+        </div>
+    </div>
+</section>
+<!-- End Testimonials Section -->
+
 <!-- Start Projects Section -->
-<section id="portfolio" class="sm:my-16 my-6 rounded-[20px] box-shadow sm:px-0 px-0 sm:py-12 py-4 mb-6 ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
+<section id="portfolio" class="bg-white dark:bg-gray-900">    
     <div>
-        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center">Our work!</h2>
-        <p class="font-barlow font-normal text-dimWhite text-[18px] text-center mt-4">
+        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Our work!</h2>
+        <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
             Prepare to be inspired as you explore the diverse range of projects we've 
             brought to life, each designed to electrify the online presence of our clients.
         </p>
     </div>
-    <div class="flex flex-col md:flex-row mt-10">
-        <div>
-            <a href="#">
-                <img src="{% static 'images/guru.png' %}" alt="project" class="stat-figures rounded-lg" />
-            </a>
-        </div>
-        <div class="md:ml-10 max-w-[550px]">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div class="flex flex-col md:flex-row mt-10 mx-auto">
             <div>
-                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Guruwritershub</h2>
+                <a href="#">
+                    <img src="{% static 'images/guru.png' %}" alt="project" class="stat-figures rounded-lg" />
+                </a>
             </div>
-            
-            <div class="mb-4">
-                <a href="https://www.guruwritershub.com/" target="_blank" class="text-cyan-400">https://www.guruwritershub.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-            <div>
-                <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
-                    Guruwritershub helps bring freelance academic experts with Students seeking assignment help together.
-                    At Guruwritershub, experts can communicate with students, and offer assugnment help on their areas of expertise.
-                    User friendly and reliable backend technology used to build this website creates a comfortable and appealing navigation capabilities.
-                </p>
-            </div>
-            <div class="flex mt-8 mb-8">
-                <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/hubspot.png' %}" alt="icon" title="Hubspot" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/postgre.png' %}" title="Postgresql" alt="icon" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/bootstrap.png' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
-            </div>
-            <div class="mt-4">
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    View case Study
-                    <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
-    <div class="flex flex-col md:flex-row mt-8">
-        <div class="md:w-1/2 md:order-2">
-            <a href="#">
-                <img src="{% static 'images/voltage.png' %}" alt="project" class="stat-figures rounded-lg" />
-            </a>
-        </div>
-        <div class="md:w-1/2 md:order-1">
-            <div class="max-w-[550px]">
-                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">VoltageLabs</h2>
+            <div class="md:ml-10 max-w-[550px]">
+                <div>
+                    <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Guruwritershub</h2>
+                </div>
+                
                 <div class="mb-4">
-                    <a href="#" target="_blank" class="text-cyan-400">https://www.voltageitlabs.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    <a href="https://www.guruwritershub.com/" target="_blank" class="text-cyan-400">https://www.guruwritershub.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
                 </div>
                 <div>
-                    <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
-                        Are you looking to create an impactful online presence that captivates your audience and drives business growth? 
-                        Look no further than Voltage Labs, the premier web development agency that delivers cutting-edge solutions tailored 
-                        to your unique needs. Voltagelabs website has been developed with security and user frendliness in mind of the developers and product maerketers.
+                    <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                        Guruwritershub helps bring freelance academic experts with Students seeking assignment help together.
+                        At Guruwritershub, experts can communicate with students, and offer assugnment help on their areas of expertise.
+                        User friendly and reliable backend technology used to build this website creates a comfortable and appealing navigation capabilities.
                     </p>
                 </div>
                 <div class="flex mt-8 mb-8">
                     <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
                     <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
-                    <img src="{% static 'images/tailwind.webp' %}" alt="icon" title="Tailwind css" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
                     <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
-                    <img src="{% static 'images/postgre.png' %}" alt="icon" title="Postgresql" class="w-7 h-7"/>
+                    <img src="{% static 'images/hubspot.png' %}" alt="icon" title="Hubspot" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/postgre.png' %}" title="Postgresql" alt="icon" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/bootstrap.png' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
                 </div>
                 <div class="mt-4">
                     <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -458,69 +467,70 @@
                 </div>
             </div>
         </div>
-    </div>    
-    
-    <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
-    <div class="flex flex-col md:flex-row mt-8">
-        <div>
-            <a href="#">
-                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-lg" />
-            </a>
-        </div>
-        <div class="md:ml-10 max-w-[550px]">
-            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Unit Store</h2>
-            <div class="mb-4">
-                <a href="#" target="_blank" class="text-cyan-400">https://www.unitstorewebsite.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+        <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
+        <div class="flex flex-col md:flex-row mt-8">
+            <div class="md:w-1/2 md:order-2">
+                <a href="#">
+                    <img src="{% static 'images/voltage.png' %}" alt="project" class="stat-figures rounded-lg" />
+                </a>
             </div>
+            <div class="md:w-1/2 md:order-1">
+                <div class="max-w-[550px]">
+                    <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">VoltageLabs</h2>
+                    <div class="mb-4">
+                        <a href="#" target="_blank" class="text-cyan-400">https://www.voltageitlabs.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                    <div>
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                            Are you looking to create an impactful online presence that captivates your audience and drives business growth? 
+                            Look no further than Voltage Labs, the premier web development agency that delivers cutting-edge solutions tailored 
+                            to your unique needs. Voltagelabs website has been developed with security and user frendliness in mind of the developers and product maerketers.
+                        </p>
+                    </div>
+                    <div class="flex mt-8 mb-8">
+                        <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                        <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                        <img src="{% static 'images/tailwind.webp' %}" alt="icon" title="Tailwind css" class="w-7 h-7 mr-4"/>
+                        <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
+                        <img src="{% static 'images/postgre.png' %}" alt="icon" title="Postgresql" class="w-7 h-7"/>
+                    </div>
+                    <div class="mt-4">
+                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            View case Study
+                            <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
+        <div class="flex flex-col md:flex-row mt-8">
             <div>
-                <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
-                    Unit Store website is a website that is used to share learning materials among students and teachers. 
-                    This website can be used by Teachers and Students to create a library of reference materials where the information 
-                    can then be accessed easily by any one who has access rights to this particular file. This website was designed in
-                    order to help create a common platform where students and teachers can share information and receive responses.
-                </p>
+                <a href="#">
+                    <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-lg" />
+                </a>
             </div>
-            <div class="flex mt-8 mb-8">
-                <img src="{% static 'images/js.png' %}" alt="icon" title="JavaScript" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/sql-server.png' %}" alt="icon" title="SQL Server" class="w-7 h-7 mr-4"/>
-                <img src="{% static 'images/bootstrap.png' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
-            </div>            
-            <div class="mt-4">
-                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    View case Study
-                    <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
-    <div class="flex flex-col md:flex-row mt-8">
-        <div class="md:w-1/2 md:order-2">
-            <a href="#">
-                <img src="{% static 'images/portfolio.png' %}" alt="project" class="stat-figures rounded-lg" />
-            </a>
-        </div>
-        <div class="md:w-1/2 md:order-1">
-            <div class="max-w-[550px]">
-                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">Portfolio</h2>
+            <div class="md:ml-10 max-w-[550px]">
+                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Unit Store</h2>
                 <div class="mb-4">
-                    <a href="https://hemarastylepeke.github.io/" target="_blank" class="text-cyan-400">https://hemarastylepeke.github.io/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    <a href="#" target="_blank" class="text-cyan-400">https://www.unitstorewebsite.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
                 </div>
                 <div>
-                    <p class="font-barlow font-normal text-dimWhite text-[18px] md:mt-0">
-                        This is the first static website that was developed by Voltage Labs. This portfolio was designed specifically for project 
-                        referencing and a proof of concept in the specified field of expertise. The development of this website wasn't that complex, and the 
-                        development stack utilized the foundational programming languages in web development. If you don't understand the basics, you can't build something complex.
+                    <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                        Unit Store website is a website that is used to share learning materials among students and teachers. 
+                        This website can be used by Teachers and Students to create a library of reference materials where the information 
+                        can then be accessed easily by any one who has access rights to this particular file. This website was designed in
+                        order to help create a common platform where students and teachers can share information and receive responses.
                     </p>
                 </div>
                 <div class="flex mt-8 mb-8">
-                    <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
-                    <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
-                    <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7"/>
-                </div>
+                    <img src="{% static 'images/js.png' %}" alt="icon" title="JavaScript" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/sql-server.png' %}" alt="icon" title="SQL Server" class="w-7 h-7 mr-4"/>
+                    <img src="{% static 'images/bootstrap.png' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
+                </div>            
                 <div class="mt-4">
                     <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         View case Study
@@ -529,21 +539,56 @@
                 </div>
             </div>
         </div>
-    </div>    
+        <div class="border-b border-gray-100 dark:border-gray-700 mt-8"></div>
+        <div class="flex flex-col md:flex-row mt-8">
+            <div class="md:w-1/2 md:order-2">
+                <a href="#">
+                    <img src="{% static 'images/portfolio.png' %}" alt="project" class="stat-figures rounded-lg" />
+                </a>
+            </div>
+            <div class="md:w-1/2 md:order-1">
+                <div class="max-w-[550px]">
+                    <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">Portfolio</h2>
+                    <div class="mb-4">
+                        <a href="https://hemarastylepeke.github.io/" target="_blank" class="text-cyan-400">https://hemarastylepeke.github.io/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                    <div>
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                            This is the first static website that was developed by Voltage Labs. This portfolio was designed specifically for project 
+                            referencing and a proof of concept in the specified field of expertise. The development of this website wasn't that complex, and the 
+                            development stack utilized the foundational programming languages in web development. If you don't understand the basics, you can't build something complex.
+                        </p>
+                    </div>
+                    <div class="flex mt-8 mb-8">
+                        <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                        <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
+                        <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7"/>
+                    </div>
+                    <div class="mt-4">
+                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            View case Study
+                            <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>   
 </section>
 <!-- End Projects Section -->
 
 <!-- Start Blog Section -->
-<section id="blog" class="bg-gray-900">
+<section id="blog" class="bg-white dark:bg-gray-800 border-b border-t border-gray-100 dark:border-gray-700">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-            <div>
-                <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center">Browse our Blog</h2>
-            </div>
-            <p class="font-light sm:text-xl text-white">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
+            <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Browse our blog</h2>
+            <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
+                In this blog section, we write about IT, Programming and several other Computer related topics.
+                We try as much as possible to cover indepth details pertaining the topic under discussion. Feel free to browse our blog.
+            </p>
         </div> 
         <div class="grid gap-8 lg:grid-cols-2">
-            <article class="p-6 rounded-lg border shadow-md bg-gray-800 border-gray-700">
+            <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="flex justify-between items-center mb-5 text-gray-500">
                     <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                         <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
@@ -634,178 +679,154 @@
                         <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </a>
                 </div>
-            </article>                    
+            </article>                  
         </div>  
     </div>
-</section>
+  </section>
 <!-- End Blog Section -->
 
-
 <!-- Start Get Quote form -->
-<section id="getQuoteform" class="sm:my-16 my-6 bg-black-gradient-2 rounded-[20px] box-shadow sm:px-16 px-6 sm:py-12 py-4 mb-6 ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
-    <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title">Get your Quote Today!</h2>
-    <div id="error-box" class="flex p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800 hidden" role="alert">
-        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-        <span class="sr-only">Info</span>
-        <div>
-            <span class="font-medium">Alert!</span> Email addresses do not match.
+<section id="getQuoteform" class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] text-gray-950 xs:leading-[76.8px] leading-[66.8px] w-full main-title dark:text-white">Get your Quote Today!</h2>
+        <div id="error-box" class="flex p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800 hidden" role="alert">
+            <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+            <span class="sr-only">Info</span>
+            <div>
+                <span class="font-medium">Alert!</span> Email addresses do not match.
+            </div>
         </div>
+        <form class="banner-box" method="POST">
+            {% csrf_token %}
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="email" name="email" id="id_email" maxlength="255" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                    <label for="id_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="email" name="confirm_email" maxlength="255" id="id_confirm_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                    <label for="id_confirm_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm Email address</label>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="text" name="first_name" maxlength="255" id="id_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                    <label for="id_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">First name</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="text" name="last_name" maxlength="255" id="id_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                    <label for="id_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Last name</label>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="tex" maxlength="20" name="phone" id="id_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                    <label for="id_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Phone number (+123-456-7890)</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                    <input type="text" name="company" id="id_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                    <label for="id_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Company/Business name</label>
+                </div>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <input type="text" name="business_address" id="id_business_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
+                <label for="id_business_address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Business location address</label>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+                <label for="id_project_description" class="block font-barlow mb-2 text-sm font-medium text-gray-900 dark:text-white">Briefly, describe your project</label>
+                <textarea id="id_project_description" name="project_description" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-purple-500 focus:border-purple-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Enter your description..."></textarea>
+            </div>
+            <button id="get-quote-btn" type="submit" class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center" disabled>Get Quote</button>
+        </form>
     </div>
-    <form class="banner-box" method="POST">
-        {% csrf_token %}
-        <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="email" name="email" id="id_email" maxlength="255" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
-                <label for="id_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
-            </div>
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="email" name="confirm_email" maxlength="255" id="id_confirm_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
-                <label for="id_confirm_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm Email address</label>
-            </div>
-        </div>
-        <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="text" name="first_name" maxlength="255" id="id_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
-                <label for="id_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">First name</label>
-            </div>
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="text" name="last_name" maxlength="255" id="id_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
-                <label for="id_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Last name</label>
-            </div>
-        </div>
-        <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="tex" maxlength="20" name="phone" id="id_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
-                <label for="id_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Phone number (+123-456-7890)</label>
-            </div>
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="text" name="company" id="id_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
-                <label for="id_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Company/Business name</label>
-            </div>
-        </div>
-        <div class="relative z-0 w-full mb-6 group">
-            <input type="text" name="business_address" id="id_business_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-purple-600 peer" placeholder=" " required />
-            <label for="id_business_address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-barlow">Business location address</label>
-        </div>
-        <div class="relative z-0 w-full mb-6 group">
-            <label for="id_project_description" class="block font-barlow mb-2 text-sm font-medium text-gray-900 dark:text-white">Briefly, describe your project</label>
-            <textarea id="id_project_description" name="project_description" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-purple-500 focus:border-purple-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Enter your description..."></textarea>
-        </div>
-        <button id="get-quote-btn" type="submit" class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center" disabled>Get Quote</button>
-    </form>
 </section>
 <!-- End Get Quote form -->
 
 <!-- Start Footer Section -->
-<section class="banner-box flex justify-center items-center sm:py-16 py-6 flex-col ml-7 md:ml-16 sm:ml-16 ss:ml-7 xs:ml-7 md:mr-10 mr-7 sm:mr-16 lg:mr-20">
-    <div class="flex justify-center items-start md:flex-row flex-col mb-8 w-full">
-      <div class="flex-[1] flex flex-col justify-start mr-10">
-        <img src="{% static 'images/logo.png' %}" alt="voltagelabs" class="w-[200px] h-[72.14px] object-contain"/>
-        <p class="font-barlow font-normal text-dimWhite text-[18px] leading-[30.8px] mt-4 max-w-[310px]">
-          The modern way to kisckstart your online presence, with confidence, security and reliability.
-        </p>
-      </div>
-      <div class="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
-          <div class="flex flex-col ss:my-0 my-4 min-w-[150px]">
-            <h4 class="font-barlow font-medium text-[18px] leading-[27px] text-white">
-                Useful Links
-            </h4>
-            <ul class="list-none mt-4">
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Content
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    How it Works
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Create
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Explore
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Terms & Services
-                </li>
-            </ul>
+<footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+              </a>
           </div>
-          <div class="flex flex-col ss:my-0 my-4 min-w-[150px]">
-            <h4 class="font-barlow font-medium text-[18px] leading-[27px] text-white">
-                Community
-            </h4>
-            <ul class="list-none mt-4">
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Help Center
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Partners
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Suggestions
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Blog
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Newsletters
-                </li>
-            </ul>
-          </div>
-          <div class="flex flex-col ss:my-0 my-4 min-w-[150px] mb-4">
-            <h4 class="font-barlow font-medium text-[18px] leading-[27px] text-white">
-                Partner
-            </h4>
-            <ul class="list-none mt-4">
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Our Partner
-                </li>
-                <li class="font-barlow font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                    Become a Partner
-                </li>
-            </ul>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                      </li>
+                      <li>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
       </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                  <span class="sr-only">Instagram page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                  <span class="sr-only">Dribbble account</span>
+              </a>
+          </div>
       </div>
-      <div class="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3f3r45]">
-        <p class="font-barlow font-normal text-center text-[18px] leading-[27px] text-white">
-          2023 VoltageLabs. All Rights Reserved.
-        </p>
-        <div class="flex flex-row md:mt-0 mt-6">
-            <img src="{% static 'images/facebook.svg' %}" alt="facebook"  class="w-[21px] h-[21px] object-contain cursor-pointer mr-6"/>
-            <img src="{% static 'images/instagram.svg' %}" alt="instagram"  class="w-[21px] h-[21px] object-contain cursor-pointer mr-6"/>
-            <img src="{% static 'images/linkedin.svg' %}" alt="linkedin" class="w-[21px] h-[21px] object-contain cursor-pointer mr-6"/>
-            <img src="{% static 'images/twitter.svg' %}" alt="twitter" class="w-[21px] h-[21px] object-contain cursor-pointer mr-0"/>
-        </div>
-      </div>
-  </section>
+    </div>
+</footer>
 <!-- End Footer Section -->
+
+<!-- Scroll to top button -->
 <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-secondary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-purple-900 hover:shadow-lg focus:bg-secondary focus:shadow-lg focus:outline-none focus:ring-0 active:hover:bg-purple-900 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
     <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
 </button>
 
-<!-- Start Scroll effect script -->
+<!-- End of Scroll to top button -->
+
 <script>
-    //common reveal options to create reveal animations
-    ScrollReveal({
-      //reset: true,
-      distance: '60px',
-      duration: 800,
-      delay: 200
-    });
-
-    // Code to allow scrolling to a section when clicked.
-    function scrollToSection(event, sectionId) {
-    event.preventDefault(); // Prevent default link behavior
-
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: 'smooth' });
-    };
-
-
-    //target elements, and specify options to create reveal animations.
-    ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
-    ScrollReveal().reveal('.banner-box', { delay: 400, origin: 'right' });
-    ScrollReveal().reveal('.stat-figures', { delay: 500, origin: 'bottom', interval: 200 });
-
     // Show error when email does not match and deactivate submit button.
     const emailInput = document.getElementById('id_email');
     const confirmEmailInput = document.getElementById('id_confirm_email');
@@ -828,6 +849,15 @@
         }
     };
 
+    // Code to allow scrolling to a section when clicked.
+    function scrollToSection(event, sectionId) {
+    event.preventDefault(); // Prevent default link behavior
+
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    // Script to allow scrolling back to the top
     // Scroll back to top button.
     // Get the button
     let mybutton = document.getElementById("btn-back-to-top");
@@ -855,6 +885,4 @@
     document.documentElement.scrollTop = 0;
     }
 </script>
-<!-- End scroll effect script -->
-
 {% endblock content %}
