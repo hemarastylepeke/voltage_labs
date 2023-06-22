@@ -1,0 +1,232 @@
+{% extends 'main_app/_base.html' %}
+{% load static %}
+{% block content %}
+
+<section id="portfolio" class="bg-white dark:bg-gray-900 mt-28">    
+    <div id="project-container" class="max-w-lg mx-auto">
+        <!-- Project 1 -->
+        <div id="project1" class="project hidden">
+            <div>
+                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Guruwritershub</h2>
+            </div>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="flex flex-col md:flex-row mt-10 mx-auto">
+                    <div>
+                        <a href="#">
+                            <img src="{% static 'images/guru.png' %}" alt="project" class="stat-figures rounded-lg" />
+                        </a>
+                    </div>
+                    <div class="md:ml-10 max-w-[550px]">
+                        <div>
+                            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Guruwritershub</h2>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <a href="https://www.guruwritershub.com/" target="_blank" class="text-cyan-400">https://www.guruwritershub.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+                        <div>
+                            <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                                Guruwritershub helps bring freelance academic experts with Students seeking assignment help together.
+                                At Guruwritershub, experts can communicate with students, and offer assugnment help on their areas of expertise.
+                                User friendly and reliable backend technology used to build this website creates a comfortable and appealing navigation capabilities.
+                            </p>
+                        </div>
+                        <div class="flex mt-8 mb-8">
+                            <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                            <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                            <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
+                            <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
+                            <img src="{% static 'images/hubspot.png' %}" alt="icon" title="Hubspot" class="w-7 h-7 mr-4"/>
+                            <img src="{% static 'images/postgre.png' %}" title="Postgresql" alt="icon" class="w-7 h-7 mr-4"/>
+                            <img src="{% static 'images/bootstrap.svg' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Project 2 -->
+        <div id="project2" class="project hidden">
+          <!-- Project 2 contents -->
+            <div>
+                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Our work!</h2>
+                <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
+                    Prepare to be inspired as you explore the diverse range of projects we've 
+                    brought to life, each designed to electrify the online presence of our clients.
+                </p>
+            </div>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="flex flex-col md:flex-row mt-10 mx-auto">
+                        <div class="md:w-1/2 md:order-2">
+                            <a href="#">
+                                <img src="{% static 'images/voltage.png' %}" alt="project" class="stat-figures rounded-lg" />
+                            </a>
+                        </div>
+                        <div class="md:w-1/2 md:order-1">
+                            <div class="max-w-[550px]">
+                                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">VoltageLabs</h2>
+                                <div class="mb-4">
+                                    <a href="#" target="_blank" class="text-cyan-400">https://www.voltageitlabs.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                                </div>
+                                <div>
+                                    <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                                        Are you looking to create an impactful online presence that captivates your audience and drives business growth? 
+                                        Look no further than Voltage Labs, the premier web development agency that delivers cutting-edge solutions tailored 
+                                        to your unique needs. Voltagelabs website has been developed with security and user frendliness in mind of the developers and product maerketers.
+                                    </p>
+                                </div>
+                                <div class="flex mt-8 mb-8">
+                                    <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/tailwind.webp' %}" alt="icon" title="Tailwind css" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/postgre.png' %}" alt="icon" title="Postgresql" class="w-7 h-7"/>
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+        <!-- Project 3 -->
+        <div id="project3" class="project hidden">
+            <div>
+                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Our work!</h2>
+                <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
+                    Prepare to be inspired as you explore the diverse range of projects we've 
+                    brought to life, each designed to electrify the online presence of our clients.
+                </p>
+            </div>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="flex flex-col md:flex-row mt-10 mx-auto">
+                    <div class="flex flex-col md:flex-row mt-8">
+                        <div>
+                            <a href="#">
+                                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-lg" />
+                            </a>
+                        </div>
+                        <div class="md:ml-10 max-w-[550px]">
+                            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Unit Store</h2>
+                            <div class="mb-4">
+                                <a href="#" target="_blank" class="text-cyan-400">https://www.unitstorewebsite.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                            <div>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                                    Unit Store website is a website that is used to share learning materials among students and teachers. 
+                                    This website can be used by Teachers and Students to create a library of reference materials where the information 
+                                    can then be accessed easily by any one who has access rights to this particular file. This website was designed in
+                                    order to help create a common platform where students and teachers can share information and receive responses.
+                                </p>
+                            </div>
+                            <div class="flex mt-8 mb-8">
+                                <img src="{% static 'images/js.png' %}" alt="icon" title="JavaScript" class="w-7 h-7 mr-4"/>
+                                <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                                <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS" class="w-7 h-7 mr-4"/>
+                                <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML" class="w-7 h-7 mr-4"/>
+                                <img src="{% static 'images/sql-server.png' %}" alt="icon" title="SQL Server" class="w-7 h-7 mr-4"/>
+                                <img src="{% static 'images/bootstrap.svg' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
+                            </div>            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Project 4 -->
+        <div id="project4" class="project hidden">
+            <div>
+                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Our work!</h2>
+                <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
+                    Prepare to be inspired as you explore the diverse range of projects we've 
+                    brought to life, each designed to electrify the online presence of our clients.
+                </p>
+            </div>
+          <!-- Project 4 contents -->
+          <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="flex flex-col md:flex-row mt-10 mx-auto">
+                <div class="flex flex-col md:flex-row mt-8">
+                    <div class="md:w-1/2 md:order-2">
+                        <a href="#">
+                            <img src="{% static 'images/portfolio.png' %}" alt="project" class="stat-figures rounded-lg" />
+                        </a>
+                    </div>
+                    <div class="md:w-1/2 md:order-1">
+                        <div class="max-w-[550px]">
+                            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">Portfolio</h2>
+                            <div class="mb-4">
+                                <a href="https://hemarastylepeke.github.io/" target="_blank" class="text-cyan-400">https://hemarastylepeke.github.io/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                            <div>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
+                                    This is the first static website that was developed by Voltage Labs. This portfolio was designed specifically for project 
+                                    referencing and a proof of concept in the specified field of expertise. The development of this website wasn't that complex, and the 
+                                    development stack utilized the foundational programming languages in web development. If you don't understand the basics, you can't build something complex.
+                                </p>
+                            </div>
+                            <div class="flex mt-8 mb-8">
+                                <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                                <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
+                                <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>      
+</section>
+<!-- Navigation buttons -->
+<div class="flex justify-center">
+    <div class="py-8 px-4 mx-auto flex max-w-screen-xl lg:py-16 lg:px-6 items-center text-center">
+        <button id="back-btn" class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+            <svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+            Back 
+        </button>
+        <button id="next-btn" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+            Next
+            <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+    </div>
+</div>
+
+<script>
+    // Retrieve project elements
+    const projects = document.getElementsByClassName('project');
+    const projectCount = projects.length;
+
+    // Set initial project index
+    let currentProjectIndex = 0;
+
+    // Show the current project
+    function showCurrentProject() {
+    for (let i = 0; i < projectCount; i++) {
+        if (i === currentProjectIndex) {
+        projects[i].classList.remove('hidden');
+        } else {
+        projects[i].classList.add('hidden');
+        }
+    }
+    }
+
+    // Event listeners for navigation buttons
+    document.getElementById('next-btn').addEventListener('click', function() {
+    currentProjectIndex = (currentProjectIndex + 1) % projectCount;
+    showCurrentProject();
+    });
+
+    document.getElementById('back-btn').addEventListener('click', function() {
+    currentProjectIndex = (currentProjectIndex - 1 + projectCount) % projectCount;
+    showCurrentProject();
+    });
+
+    // Show the initial project
+    showCurrentProject();
+
+</script>
+{% endblock content %}

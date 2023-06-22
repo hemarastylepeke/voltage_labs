@@ -1,0 +1,43 @@
+{% extends 'main_app/_base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 mt-28">
+        <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+            <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <header class="mb-4 lg:mb-6 not-format">
+                    <address class="flex items-center mb-6 not-italic">
+                        <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                            <img class="mr-4 w-16 h-16 rounded-full" src="{% static 'images/voltage_pic.jpg' %}" alt="{{ blog.author }}">
+                            <div>
+                                <p class="cursor-pointer font-barlow text-xl font-bold text-gray-900 dark:text-white">{{ blog.author }}</p>
+                                <p class="font-barlow text-base font-light text-gray-500 dark:text-gray-400">{{ blog.time }}</p>
+                            </div>
+                        </div>
+                    </address>
+                    <h1 class="font-barlow mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">{{ blog.title }}</h1>
+                </header>
+                <div class="mb-5 font-barlow text-gray-950 dark:text-white leading-loose">
+                    {% autoescape off %}
+                        {{ blog.body|safe }}
+                    {% endautoescape %}
+                </div>
+                <section class="not-format">
+                    <form class="mb-6">
+                        <div class="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-400 dark:bg-gray-800 dark:border-gray-700">
+                            <label for="comment" class="sr-only">Your comment</label>
+                            <textarea id="comment" rows="6"
+                                class="font-barlow px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
+                                placeholder="Write a comment..." required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-5 lg:mr-6 xl:mr-6">
+                            Post comment
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+      </main>
+</section>
+{% endblock content %}
