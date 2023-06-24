@@ -1,6 +1,18 @@
 {% extends 'main_app/_base.html' %}
 {% load static %}
 {% block content %}
+{% if messages %}
+    {% for message in messages %}
+    <div id="alert-message" class="mx-auto max-w-screen-sm flex p-4 mb-0 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800 mt-24" role="alert">
+        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+        <span class="sr-only">Info</span>
+        <div>
+        <span class="font-medium">{{ message }}</span>
+        </div>
+    </div>
+    {% endfor %}
+{% endif %}
+
 <!-- Start Hero section -->
 <section id='about' class="flex md:flex-row flex-col sm:py-16 py-6">
     <div class="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6 pt-20">
@@ -39,7 +51,7 @@
         We’ll handle the rest.
       </h1>
       <p class="font-barlow font-normal text-gray-900 dark:text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5 section-title">
-        Elevate your digital footprint with VoltageLabs, a leading <strong>web development agency</strong> empowering 
+        Elevate your digital footprint with VoltageITLabs, a leading <strong>web development agency</strong> empowering 
         businesses for success in the online world.
       </p>
     </div>
@@ -91,7 +103,7 @@
         </h2>
       </div>
       <p class="font-barlow font-normal text-gray-900 dark:text-white text-[18px] leading-[30.8px] max-w-[470px] mt-5 image section-title">
-        At VoltageLabs, we understand the crucial role that a visually stunning and user-friendly website plays in today's digital landscape. With our expertise in the field, we strive to transform your online presence into a captivating and dynamic platform that drives engagement, enhances your brand identity, and maximizes your online success. <br />
+        At VoltageITLabs, we understand the crucial role that a visually stunning and user-friendly website plays in today's digital landscape. With our expertise in the field, we strive to transform your online presence into a captivating and dynamic platform that drives engagement, enhances your brand identity, and maximizes your online success. <br />
         As a leading web design and development company, we take pride in our ability to blend creativity and technical proficiency seamlessly. Our team of highly skilled designers and developers are adept at crafting unique, tailor-made solutions that align with your specific business goals and objectives. We believe that every website should be a reflection of your brand's essence, and our services are centered around achieving just that. <br />
         By offering the services listed, we go beyond the technical aspects of web development and focus on a holistic approach, helping you make informed decisions and strategies that will drive your digital growth and achieve your desired outcomes.
       </p>
@@ -171,7 +183,7 @@
             <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center dark:text-white text-gray-900">Our Development Stack</h2>
         </div>
         <p class="mb-10 text-lg font-barlow text-gray-900 dark:text-white lg:text-center lg:text-xl lg:px-64 lg:mb-16 ">
-            At VoltageLabs, we have series of technologies under our disposal that we use to give you the best product. 
+            At VoltageITLabs, we have series of technologies under our disposal that we use to give you the best product. 
             Here are a few technologies under our belt!
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mt-12">
@@ -282,7 +294,7 @@
         <div class="mx-auto max-w-screen-sm">
             <h2 class="mb-4 font-barlow font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full main-title dark:text-white text-gray-900">What are our happy Clients saying?</h2>
             <p class="mb-8 text-lg font-barlow text-gray-950 lg:mb-16 sm:text-xl dark:text-white">
-                At VoltageLabs, we take great pride in our web design and development services, striving to deliver exceptional results for our clients. Our commitment to excellence and customer satisfaction has earned us a solid reputation in the industry.
+                At VoltageITLabs, we take great pride in our web design and development services, striving to deliver exceptional results for our clients. Our commitment to excellence and customer satisfaction has earned us a solid reputation in the industry.
             </p>
         </div> 
         <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
@@ -475,7 +487,7 @@
             </div>
             <div class="md:w-1/2 md:order-1">
                 <div class="max-w-[550px]">
-                    <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">VoltageLabs</h2>
+                    <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">VoltageITLabs</h2>
                     <div class="mb-4">
                         <a href="#" target="_blank" class="text-cyan-400">https://www.voltageitlabs.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
                     </div>
@@ -483,7 +495,7 @@
                         <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
                             Are you looking to create an impactful online presence that captivates your audience and drives business growth? 
                             Look no further than Voltage Labs, the premier web development agency that delivers cutting-edge solutions tailored 
-                            to your unique needs. Voltagelabs website has been developed with security and user frendliness in mind of the developers and product maerketers.
+                            to your unique needs. VoltageITLabs website has been developed with security and user frendliness in mind of the developers and product maerketers.
                         </p>
                     </div>
                     <div class="flex mt-8 mb-8">
@@ -603,7 +615,7 @@
                             </span>
                             <span class="text-sm font-barlow">{{ blog.time }}</span>
                         </div>
-                        <h2 class="font-barlow mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">{{ blog.title }}</a></h2>
+                        <h2 class="font-barlow mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a></h2>
                         <div class="mb-5 font-light text-gray-500 dark:text-gray-400 leading-loose">
                             {% autoescape off %}
                                 {% if blog.body|length > 200 %}
@@ -615,7 +627,7 @@
                         </div>
                         <div class="flex justify-between items-center">
                             <div class="flex items-center space-x-4">
-                                <img class="w-7 h-7 rounded-full" src="{% static 'images/voltage_pic.svg' %}" alt="{{ blog.author }}" />
+                                <img class="w-7 h-7 rounded-full" src="https://www.freepnglogos.com/uploads/linux-png/linux-logo-logo-brands-for-0.png" alt="{{ blog.author }}" />
                                 <span class="font-medium dark:text-white font-barlow">
                                     {{ blog.author }}
                                 </span>
@@ -699,7 +711,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="{% url 'home' %}" class="flex items-center text-secondary font-barlow text-xl font-extrabold">
-                Voltage <span class="dark:text-white text-gray-950">Labs</span>
+                VoltageIT <span class="dark:text-white text-gray-950">Labs</span>
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -707,7 +719,7 @@
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul class="text-gray-600 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="{% url 'home' %}" class="hover:underline">VoltageLabs</a>
+                          <a href="{% url 'home' %}" class="hover:underline">VoltageITLabs</a>
                       </li>
                       <li>
                           <a href="{% url 'blogs_list' %}" class="hover:underline">Blogs</a>
@@ -740,7 +752,7 @@
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 VoltageLabs™. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 VoltageITLabs™. All Rights Reserved.
           </span>
           <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
               <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -808,7 +820,6 @@
     };
 
     // Script to allow scrolling back to the top
-    // Scroll back to top button.
     // Get the button
     let mybutton = document.getElementById("btn-back-to-top");
 
@@ -834,5 +845,20 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+    // Hide the alert after a certain duration
+    function hideAlert() {
+        var alert = document.getElementById('alert-message');
+        alert.style.display = 'none';
+    }
+
+    // Check if the alert exists and hide it after a delay
+    window.addEventListener('DOMContentLoaded', function() {
+        var alert = document.getElementById('alert-message');
+        if (alert) {
+            setTimeout(hideAlert, 4000); // Hide the alert after 3 seconds (3000 milliseconds)
+        }
+    });
+
 </script>
 {% endblock content %}

@@ -1,6 +1,7 @@
 from .models import Blog
 from .forms import ProjectForm
 from operator import attrgetter
+from django.contrib import messages
 from django.shortcuts import render, redirect
 
 # Define the landing page
@@ -14,8 +15,8 @@ def home(request):
         form = ProjectForm(request.POST)
         if form.is_valid():
             form.save()
-            # Redirect to success page after saving the form
-            return redirect('project_success')
+            # Return success message
+            messages.success(request, "Project Submitted successfully!")
     else:
         form = ProjectForm()
     return render(request, 'main_app/home.html', {'form':form, "blogs":blogs})
@@ -31,10 +32,6 @@ def blogs_page(request):
     # Get the list of all blogs
     blogs = Blog.objects.all()
     return render(request, "main_app/list_of_blogs.html", {'blogs':blogs})
-
-# Define the success page after a user submits the get quote form.
-def success(request):
-    return render(request, 'main_app/success.html')
 
 # Page for projects case study.
 def case_study_page(request):
