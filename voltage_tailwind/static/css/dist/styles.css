@@ -1576,6 +1576,26 @@ select{
   padding-top: 2rem;
 }
 
+.pt-28{
+  padding-top: 7rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
+}
+
+.pt-40{
+  padding-top: 10rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
+.pt-36{
+  padding-top: 9rem;
+}
+
 .text-left{
   text-align: left;
 }
