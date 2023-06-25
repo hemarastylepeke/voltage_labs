@@ -2,79 +2,214 @@
 {% load static %}
 {% block content %}
 
-<section id="portfolio" class="bg-white dark:bg-gray-900 mt-28">
+<section id="portfolio" class="bg-white dark:bg-gray-900 mt-24">
         <!-- Project 1 -->
         <div id="project1" class="project hidden">
-            <div>
-                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Guruwritershub</h2>
-            </div>
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-                <div class="flex flex-col md:flex-row mt-10 mx-auto">
-                    <div>
-                        <a href="#">
-                            <img src="{% static 'images/guru.png' %}" alt="project" class="stat-figures rounded-lg" />
-                        </a>
+                <div>
+                    <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-gray-950">Guruwritershub Assignment Help Website.</h2>
+                </div>
+                <div class="mt-4 md:items-center">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 my-1 md:my-0">Designed <i class="fa-solid fa-check"></i></span>
+                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 my-1 md:my-0">Deployed <i class="fa-solid fa-check"></i></span>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300 my-1 md:my-0">Maintained <i class="fa-solid fa-check"></i></span>
+                </div>                
+                <div class="mt-10 bg-gradient-tr from-purple-400 to-green-700">
+                    <img src="{% static 'images/guru-case-study.png' %}" alt="project" class="mix-blend-lighter">
+                </div>
+                <div class="flex flex-col md:flex-row mt-20">
+                    <div class="md:w-3/4 md:order-2">
+                        <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-4 leading-10">Guruwritershub : Offering Assignment Help when you need it most.</h3> 
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                            The Guruwritershub Assignment Help website is a comprehensive online platform designed to provide high-quality academic writing services to students worldwide. The website serves as a hub where students can seek assistance with their assignments, essays, research papers, and other academic tasks. With a user-friendly interface and a team of expert writers, Guruwritershub aims to offer reliable and efficient academic support to students across various disciplines.
+                        </p>
+                        <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Key Features and Functionality</h4>
+                            <ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>User Registration and Login</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Assignment Submission</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Real-Time Communication</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Order Tracking and Progress Updates</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Secure Payment System</span>
+                                </li>
+                            </ul>
+                        <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Design and User Experience</h4>
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                            The Guruwritershub Assignment Help website features a clean, modern, and intuitive design. The user interface is thoughtfully structured, allowing students to navigate effortlessly through the different sections of the website. The use of visually appealing graphics and an organized layout enhances the overall user experience, making it easy for students to access the desired services and information.
+                        </p> 
                     </div>
-                    <div class="md:ml-10 max-w-[550px]">
-                        <div>
-                            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Guruwritershub</h2>
+                    <div class="md:w-1/2 md:order-1 md:mr-10">
+                        <div class="max-w-[550px]">
+                            <div>
+                                <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Client</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">Offering assignment help, accelerationg towards better Grades</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Industry</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">Eduation</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Company Size</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">2 - 10</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Headquarters</h3>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">Tasmania, Australia</p>
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Project Duration</h3>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">4 months (Mar. - Jul. 2023)</p>
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Development Stack</h3>
+                                <div class="flex mt-8 mb-8">
+                                    <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/hubspot.png' %}" alt="icon" title="Hubspot" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/postgre.png' %}" title="Postgresql" alt="icon" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/bootstrap.svg' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://www.guruwritershub.com/" target="_blank">
+                                    <button type="button" class="text-white bg-blue-700 get-quote-btn-grad hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Visit Website
+                                        <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    </button>
+                                </a>
+                            </div>
                         </div>
-                        
-                        <div class="mb-4">
-                            <a href="https://www.guruwritershub.com/" target="_blank" class="text-cyan-400">https://www.guruwritershub.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
-                        </div>
-                        <div>
-                            <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
-                                Guruwritershub helps bring freelance academic experts with Students seeking assignment help together.
-                                At Guruwritershub, experts can communicate with students, and offer assugnment help on their areas of expertise.
-                                User friendly and reliable backend technology used to build this website creates a comfortable and appealing navigation capabilities.
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row mt-20">
+                    <div class="md:w-1/2 md:order-2 mb-4">
+                       <img src="{% static 'images/guru.png' %}" alt="project" class="rounded-lg">
+                    </div>
+                    <div class="md:w-1/2 md:order-1 md:mr-8">
+                        <img src="{% static 'images/portfolio1.webp' %}" alt="project" class="rounded-lg">
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row mt-10">
+                    <div class="md:w-1/2 md:order-2 mb-4">
+                       <img src="{% static 'images/guru-login.png' %}" alt="project" class="rounded-lg">
+                    </div>
+                    <div class="md:w-1/2 md:order-1 md:mr-8">
+                        <img src="{% static 'images/financial-dashboard.png' %}" alt="project" class="rounded-lg">
+                    </div>
+                </div>     
+            </div>
+            <div class="bg-white dark:bg-gray-900">
+                <div>
+                    <h2 class="dark:text-secondary font-barlow font-semibold text-2xl text-center">Hear it from Guruwritershub CEO</h2>
+                </div>
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                        </svg> 
+                        <blockquote>
+                            <p class="text-2xl font-medium text-gray-900 dark:text-white">
+                                "VoltageITLabs exceeded my expectations in every aspect of our collaboration. From the very beginning, their team 
+                                demonstrated a deep understanding of our web development needs and provided us with exceptional service. 
+                                They not only delivered a beautifully designed website but also incorporated innovative solutions that boosted 
+                                our online presence. Their attention to detail, professionalism, and technical expertise are truly commendable." 
                             </p>
-                        </div>
-                        <div class="flex mt-8 mb-8">
-                            <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
-                            <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
-                            <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
-                            <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
-                            <img src="{% static 'images/hubspot.png' %}" alt="icon" title="Hubspot" class="w-7 h-7 mr-4"/>
-                            <img src="{% static 'images/postgre.png' %}" title="Postgresql" alt="icon" class="w-7 h-7 mr-4"/>
-                            <img src="{% static 'images/bootstrap.svg' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
-                        </div>
-                        
-                    </div>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <img class="w-6 h-6 rounded-full" src="{% static 'images/people01.webp' %}" alt="profile picture">
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Martin Otumba</div>
+                                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO Guruwritershub</div>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
       
         <!-- Project 2 -->
         <div id="project2" class="project hidden">
-          <!-- Project 2 contents -->
-            <div>
-                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Our work!</h2>
-                <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
-                    Prepare to be inspired as you explore the diverse range of projects we've 
-                    brought to life, each designed to electrify the online presence of our clients.
-                </p>
-            </div>
+            <!-- Project 2 contents -->
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-                <div class="flex flex-col md:flex-row mt-10 mx-auto">
-                        <div class="md:w-1/2 md:order-2">
-                            <a href="#">
-                                <img src="{% static 'images/voltage.png' %}" alt="project" class="stat-figures rounded-lg" />
-                            </a>
-                        </div>
-                        <div class="md:w-1/2 md:order-1">
-                            <div class="max-w-[550px]">
-                                <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">VoltageLabs</h2>
-                                <div class="mb-4">
-                                    <a href="#" target="_blank" class="text-cyan-400">https://www.voltageitlabs.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
-                                </div>
-                                <div>
-                                    <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
-                                        Are you looking to create an impactful online presence that captivates your audience and drives business growth? 
-                                        Look no further than Voltage Labs, the premier web development agency that delivers cutting-edge solutions tailored 
-                                        to your unique needs. Voltagelabs website has been developed with security and user frendliness in mind of the developers and product maerketers.
-                                    </p>
-                                </div>
+                <div>
+                    <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-gray-950">VoltageITLabs: A web development Agency</h2>
+                </div>
+                <div class="mt-4 md:items-center">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 my-1 md:my-0">Designed <i class="fa-solid fa-check"></i></span>
+                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 my-1 md:my-0">Deployed <i class="fa-solid fa-check"></i></span>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300 my-1 md:my-0">Maintained <i class="fa-solid fa-check"></i></span>
+                </div>                
+                <div class="mt-10 bg-gradient-tr from-purple-400 to-green-700">
+                    <img src="{% static 'images/voltage-case-study.png' %}" alt="project" class="mix-blend-lighter">
+                </div>
+                <div class="flex flex-col md:flex-row mt-20">
+                    <div class="md:w-3/4 md:order-2">
+                        <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-4 leading-10">VoltageITLabs: A web development Agency empowering businesses for success.</h3> 
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                            VoltageITLabs is a leading technology company that specializes in <strong>Custom</strong> web development solutions for businesses across various industries. The goal of this project was to design and develop a modern, responsive website that showcases VoltageITLabs' expertise and attracts potential clients. The website needed to reflect their professionalism, creativity, and technical capabilities.
+                        </p>
+                        <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Key Features and Functionality</h4>
+                            <ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Project details submission</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Chat feature integration</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Blogging feature</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>User Authentication and login</span>
+                                </li>
+                            </ul>
+                        <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Design and User Experience</h4>
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                            Recognizing the importance of mobile-friendly websites, the VoltageITLabs site was developed with a responsive design approach. This ensures optimal user experience across devices, from desktops to smartphones and tablets. The layout, images, and interactive elements adapt seamlessly, allowing visitors to access the website's content and functionality with ease, regardless of the device they are using. In addition to that, users are presented with ability to choose their own theme, dark or white.
+                        </p> 
+                    </div>
+                    <div class="md:w-1/2 md:order-1 md:mr-10">
+                        <div class="max-w-[550px]">
+                            <div>
+                                <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Client</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">A web development Agency empowering businesses for success.</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Industry</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">Information and Communication Technology.</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Company Size</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">1 - 5</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Headquarters</h3>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">Nairobi, Kenya</p>
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Project Duration</h3>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">1 week </p>
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Development Stack</h3>
                                 <div class="flex mt-8 mb-8">
                                     <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
                                     <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
@@ -82,102 +217,313 @@
                                     <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7 mr-4"/>
                                     <img src="{% static 'images/postgre.png' %}" alt="icon" title="Postgresql" class="w-7 h-7"/>
                                 </div>
-                                
                             </div>
+                            <div class="mt-4">
+                                <a href="#" target="_blank">
+                                    <button type="button" class="text-white bg-blue-700 get-quote-btn-grad hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Visit Website
+                                        <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="flex flex-col md:flex-row mt-20">
+                    <div class="md:w-1/2 md:order-2 mb-4">
+                       <img src="{% static 'images/voltage-white-theme.png' %}" alt="project" class="rounded-lg">
+                    </div>
+                    <div class="md:w-1/2 md:order-1 md:mr-8">
+                        <img src="{% static 'images/bloging-voltage.png' %}" alt="project" class="rounded-lg">
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row mt-10">
+                    <div class="md:w-1/2 md:order-2 mb-4">
+                       <img src="{% static 'images/get-quote.png' %}" alt="project" class="rounded-lg">
+                    </div>
+                    <div class="md:w-1/2 md:order-1 md:mr-8">
+                        <img src="{% static 'images/blog-page.png' %}" alt="project" class="rounded-lg">
+                    </div>
+                </div>     
             </div>
-
+            <div class="bg-white dark:bg-gray-900">
+                <div>
+                    <h2 class="dark:text-secondary font-barlow font-semibold text-2xl text-center">Hear it from a Beta Tester</h2>
+                </div>
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                        </svg> 
+                        <blockquote>
+                            <p class="text-2xl font-medium text-gray-900 dark:text-white">
+                                "As a beta tester for VoltageITLabs' new website, I am thrilled to share my experience and impressions. 
+                                The website truly exceeded my expectations in terms of design, functionality, and overall user experience.
+                                From the moment I landed on the homepage, I was captivated by its modern and sleek design. The combination 
+                                of purple and dark gray accents created a visually appealing interface that immediately conveyed professionalism and innovation." 
+                            </p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <img class="w-6 h-6 rounded-full" src="{% static 'images/ruby.png' %}" alt="profile picture">
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Mike</div>
+                                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Beta Tester</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
       
         <!-- Project 3 -->
         <div id="project3" class="project hidden">
-            <div>
-                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Our work!</h2>
-                <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
-                    Prepare to be inspired as you explore the diverse range of projects we've 
-                    brought to life, each designed to electrify the online presence of our clients.
-                </p>
-            </div>
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-                <div class="flex flex-col md:flex-row mt-10 mx-auto">
-                    <div class="flex flex-col md:flex-row mt-8">
-                        <div>
-                            <a href="#">
-                                <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="stat-figures rounded-lg" />
-                            </a>
-                        </div>
-                        <div class="md:ml-10 max-w-[550px]">
-                            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-4">Unit Store</h2>
-                            <div class="mb-4">
-                                <a href="#" target="_blank" class="text-cyan-400">https://www.unitstorewebsite.com/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
-                            </div>
+                <div>
+                    <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-gray-950">Unit Store Website: A collection of Learning materials</h2>
+                </div>
+                <div class="mt-4 md:items-center">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 my-1 md:my-0">Designed <i class="fa-solid fa-check"></i></span>
+                    <span class="bg-pink-100 text-pink-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-pink-400 border border-pink-400">Deployed <i class="fa-solid fa-xmark"></i></span>
+                    <span class="bg-pink-100 text-pink-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-pink-400 border border-pink-400">Maintained <i class="fa-solid fa-xmark"></i></span>
+                </div>                
+                <div class="mt-10 bg-gradient-tr from-purple-400 to-green-700">
+                    <img src="{% static 'images/unit-store-landing.png' %}" alt="project" class="mix-blend-lighter">
+                </div>
+                <div class="flex flex-col md:flex-row mt-20">
+                    <div class="md:w-3/4 md:order-2">
+                        <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-4 leading-10">Unit Store Website: A platform that acts as a collection of open source learning materials for students.</h3> 
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                            Unit Store is a comprehensive and innovative web-based platform designed to streamline the distribution and retrieval of learning materials for students. It serves as a centralized storage hub that caters to the needs of both educators and learners alike. By offering a user-friendly interface and robust features, Unit Store aims to enhance the educational experience and provide a seamless resource-sharing ecosystem.                        </p>
+                        <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Key Features and Functionality</h4>
+                            <ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>User Roles and Permissions</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Secure User Authentication</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>User-friendly Dashboard</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Effortless Material Upload</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Notifications and Updates</span>
+                                </li>
+                            </ul>
+                        <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Design and User Experience</h4>
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                            Unit Store revolutionizes the traditional approach to resource sharing in education by providing a feature-rich, secure, and user-friendly platform. With its emphasis on collaboration, accessibility, and efficient resource management, Unit Store empowers both educators and learners, fostering a culture of continuous growth and engagement within the academic community.                        
+                        </p> 
+                    </div>
+                    <div class="md:w-1/2 md:order-1 md:mr-10">
+                        <div class="max-w-[550px]">
                             <div>
-                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
-                                    Unit Store website is a website that is used to share learning materials among students and teachers. 
-                                    This website can be used by Teachers and Students to create a library of reference materials where the information 
-                                    can then be accessed easily by any one who has access rights to this particular file. This website was designed in
-                                    order to help create a common platform where students and teachers can share information and receive responses.
-                                </p>
+                                <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Client</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">A Unit Store Platform for study materials.</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Industry</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">Education.</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Company Size</h3> 
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">1 - 3</p> 
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Headquarters</h3>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">N/A</p>
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Project Duration</h3>
+                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">4 Days</p>
+                                <hr>
+                                <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Development Stack</h3>
+                                <div class="flex mt-8 mb-8">
+                                    <img src="{% static 'images/js.png' %}" alt="icon" title="JavaScript" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/sql-server.png' %}" alt="icon" title="SQL Server" class="w-7 h-7 mr-4"/>
+                                    <img src="{% static 'images/bootstrap.svg' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
+                                </div>
                             </div>
-                            <div class="flex mt-8 mb-8">
-                                <img src="{% static 'images/js.png' %}" alt="icon" title="JavaScript" class="w-7 h-7 mr-4"/>
-                                <img src="{% static 'images/python.png' %}" alt="icon" title="Python" class="w-7 h-7 mr-4"/>
-                                <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS" class="w-7 h-7 mr-4"/>
-                                <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML" class="w-7 h-7 mr-4"/>
-                                <img src="{% static 'images/sql-server.png' %}" alt="icon" title="SQL Server" class="w-7 h-7 mr-4"/>
-                                <img src="{% static 'images/bootstrap.svg' %}" title="Bootstrap" alt="icon" class="w-7 h-7"/>
-                            </div>            
-                            
                         </div>
                     </div>
+                </div>
+                <div class="flex flex-col md:flex-row mt-20">
+                    <div class="md:w-1/2 md:order-2 mb-4">
+                       <img src="{% static 'images/portfolio4.webp' %}" alt="project" class="rounded-lg">
+                    </div>
+                    <div class="md:w-1/2 md:order-1 md:mr-8">
+                        <img src="{% static 'images/portfolio5.webp' %}" alt="project" class="rounded-lg">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-900">
+                <div>
+                    <h2 class="dark:text-secondary font-barlow font-semibold text-2xl text-center">Hear it from a Student</h2>
+                </div>
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                        </svg> 
+                        <blockquote>
+                            <p class="text-2xl font-medium text-gray-900 dark:text-white">
+                                "First and foremost, Unit Store offers a vast repository of resources that cover a wide range of subjects and grade levels. Whether I need lecture notes, textbooks, or supplementary materials, I can find them all in one place. The advanced search functionality makes it a breeze to locate specific resources, 
+                                saving me precious time and effort.
+                                One of the standout features of Unit Store is its user-friendly interface. Navigating through the platform is incredibly intuitive, 
+                                allowing me to quickly find the materials I need without any hassle. The organized structure, with categorized subjects and courses, 
+                                ensures that I can easily browse through relevant resources and explore related materials for a comprehensive understanding of the 
+                                topics I'm studying." 
+                            </p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <img class="w-6 h-6 rounded-full" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png" alt="profile picture">
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Edwin Stander</div>
+                                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Student Pwani University</div>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
       
         <!-- Project 4 -->
         <div id="project4" class="project hidden">
-            <div>
-                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-center text-gray-950">Our work!</h2>
-                <p class="font-barlow dark:text-white text-[18px] text-center mt-4 text-gray-950">
-                    Prepare to be inspired as you explore the diverse range of projects we've 
-                    brought to life, each designed to electrify the online presence of our clients.
-                </p>
-            </div>
           <!-- Project 4 contents -->
           <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-            <div class="flex flex-col md:flex-row mt-10 mx-auto">
-                <div class="flex flex-col md:flex-row mt-8">
-                    <div class="md:w-1/2 md:order-2">
-                        <a href="#">
-                            <img src="{% static 'images/portfolio.png' %}" alt="project" class="stat-figures rounded-lg" />
-                        </a>
-                    </div>
-                    <div class="md:w-1/2 md:order-1">
-                        <div class="max-w-[550px]">
-                            <h2 class="font-barlow text-secondary font-semibold text-[30px] mb-3">Portfolio</h2>
-                            <div class="mb-4">
-                                <a href="https://hemarastylepeke.github.io/" target="_blank" class="text-cyan-400">https://hemarastylepeke.github.io/ <i class="fa-solid fa-square-arrow-up-right"></i></a>
-                            </div>
-                            <div>
-                                <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[18px] md:mt-0">
-                                    This is the first static website that was developed by Voltage Labs. This portfolio was designed specifically for project 
-                                    referencing and a proof of concept in the specified field of expertise. The development of this website wasn't that complex, and the 
-                                    development stack utilized the foundational programming languages in web development. If you don't understand the basics, you can't build something complex.
-                                </p>
-                            </div>
+            <div>
+                <h2 class="font-barlow font-semibold xs:text-[48px] text-[40px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full main-title text-gray-950">Unit Store Website: A collection of Learning materials</h2>
+            </div>
+            <div class="mt-4 md:items-center">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 my-1 md:my-0">Designed <i class="fa-solid fa-check"></i></span>
+                <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 my-1 md:my-0">Deployed <i class="fa-solid fa-check"></i></span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300 my-1 md:my-0">Maintained <i class="fa-solid fa-check"></i></span>
+            </div>                 
+            <div class="mt-10 bg-gradient-tr from-purple-400 to-green-700">
+                <img src="{% static 'images/portfolio-landing.png' %}" alt="project" class="mix-blend-lighter">
+            </div>
+            <div class="flex flex-col md:flex-row mt-20">
+                <div class="md:w-3/4 md:order-2">
+                        <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-4 leading-10">Project's Portfolio: a Simple Portfolio show casing the projects done and completed.</h3> 
+                        <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                            Our team worked closely with our client, to develop a stunning portfolio website that effectively showcases his exceptional web development and system's administrative skills. The goal was to create an engaging online platform that highlights his expertise and attracts potential clients or employers. Through a combination of compelling design, seamless functionality, and user-friendly navigation, we successfully brought our client's vision to life.
+                        </p>
+                        <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Key Features and Functionality</h4>
+                        <ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Homepage</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Skills and Expertise</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Project Showcase</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>About Me</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Contact and Call-to-Action</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Responsive Design and Performance</span>
+                            </li>
+                        </ul>
+                    <h4 class="font-barlow font-semibold text-gray-950 dark:text-white text-xl mb-4 leading-10">Design and User Experience</h4>
+                    <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">
+                        To ensure an optimal user experience across various devices and screen sizes, we implemented a responsive design approach. The portfolio website seamlessly adapts to desktops, laptops, tablets, and mobile devices, providing a consistent and visually appealing experience regardless of the user's platform. Additionally, we optimized the website for fast loading times, ensuring that visitors can access the content quickly and efficiently.                    
+                    </p> 
+                </div>
+                <div class="md:w-1/2 md:order-1 md:mr-10">
+                    <div class="max-w-[550px]">
+                        <div>
+                            <h3 class="font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Client</h3> 
+                            <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">N/A</p> 
+                            <hr>
+                            <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Industry</h3> 
+                            <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">Portfolio.</p> 
+                            <hr>
+                            <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Company Size</h3> 
+                            <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">N/A</p> 
+                            <hr>
+                            <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Headquarters</h3>
+                            <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">N/A</p>
+                            <hr>
+                            <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Project Duration</h3>
+                            <p class="font-barlow font-normal text-gray-950 dark:text-dimWhite text-[16px] leading-[24px] mb-2">2 Days</p>
+                            <hr>
+                            <h3 class="mt-4 font-barlow font-semibold text-gray-950 dark:text-white text-2xl mb-2 leading-[23px]">Development Stack</h3>
                             <div class="flex mt-8 mb-8">
                                 <img src="{% static 'images/js.png' %}" alt="icon" title="Javascript" class="w-7 h-7 mr-4"/>
                                 <img src="{% static 'images/css-3.png' %}" alt="icon" title="CSS-3" class="w-7 h-7 mr-4"/>
                                 <img src="{% static 'images/html-5.png' %}" alt="icon" title="HTML-5" class="w-7 h-7"/>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="flex flex-col md:flex-row mt-20">
+                <div class="md:w-1/2 md:order-2 mb-4">
+                   <img src="{% static 'images/about-me.png' %}" alt="project" class="rounded-lg">
+                </div>
+                <div class="md:w-1/2 md:order-1 md:mr-8">
+                    <img src="{% static 'images/contact-me.png' %}" alt="project" class="rounded-lg">
+                </div>
+            </div>
         </div>
-        </div>    
+        <div class="bg-white dark:bg-gray-900">
+            <div>
+                <h2 class="dark:text-secondary font-barlow font-semibold text-2xl text-center">Hear it from Portfolio Owner</h2>
+            </div>
+            <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                <figure class="max-w-screen-md mx-auto">
+                    <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    <blockquote>
+                        <p class="text-2xl font-medium text-gray-900 dark:text-white">
+                            "The design concept of the portfolio perfectly captures the essence of my expertise. The modern and sleek aesthetic, 
+                            coupled with the captivating visuals, immediately grabs the attention of visitors. The clean lines and thoughtful 
+                            use of white space create a visually appealing layout that highlights the quality of my work.
+                            The homepage serves as a captivating introduction to my portfolio, featuring a dynamic hero section that instantly 
+                            engages visitors. The grid layout showcasing my skills and expertise allows potential clients or employers to 
+                            understand the breadth of my technical knowledge at a glance." 
+                        </p>
+                    </blockquote>
+                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                        <img class="w-6 h-6 rounded-full" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png" alt="profile picture">
+                        <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                            <div class="pr-3 font-medium text-gray-900 dark:text-white">Hemstone</div>
+                            <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Programmer VoltageITLabs</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div> 
+    </div>    
 </section>
 <!-- Navigation buttons -->
 <div class="flex justify-center">
@@ -192,7 +538,6 @@
         </button>
     </div>
 </div>
-
 <script>
     // Retrieve project elements
     const projects = document.getElementsByClassName('project');
