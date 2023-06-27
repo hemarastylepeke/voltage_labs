@@ -1,1 +1,1 @@
-web: gunicorn voltage_labs.wsgi --log-file
+web: gunicorn voltage_labs.wsgi
