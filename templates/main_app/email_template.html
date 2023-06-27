@@ -1,0 +1,120 @@
+{% load static tailwind_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% tailwind_css %}
+    <title>Project Submission Confirmation</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+    <section class="max-w-2xl px-6 py-8 mx-auto bg-white dark:bg-gray-900">
+        <header>
+            <a href="#" class="flex items-center text-secondary font-barlow text-xl font-extrabold">
+                VoltageIT <span class="dark:text-white text-gray-950">Labs</span>
+            </a>
+        </header>
+    
+        <main class="mt-8">
+            <img class="object-cover w-full h-56 rounded-lg md:h-72" src="{% static 'images/check2.png' %}" alt="banner">
+            <h2 class="mt-6 text-gray-700 dark:text-gray-200 font-semibold font-barlow">Dear {{ instance.first_name }}, {{ instance.last_name }}.</h2>
+    
+            <p class="mt-2 leading-loose text-gray-600 dark:text-gray-300 font-barlow">
+                You are receiving this email because your submitted project to voltageITLabs is under processing. 
+                We are really happy to welcome you onboard. We will review your project and get back to you as fast as possible.
+            </p>
+            <h2 class="mt-6 text-gray-700 dark:text-gray-200 font-semibold font-barlow text-xl">Order Summary</h2>
+            
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-6">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Section
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Value
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <strong>Email</strong>
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ instance.email }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <strong>First Name</strong>
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ instance.first_name }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <strong>Last Name</strong>
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ instance.last_name }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <strong>Phone</strong>
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ instance.phone }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <strong>Company</strong>
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ instance.company }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <strong>Address</strong>
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ instance.business_address }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <strong>Project Description</strong> 
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ instance.project_description }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="mt-6 text-gray-600 dark:text-gray-300 font-barlow">
+                Thanks, <br>
+                <strong class="text-secondary">VoltageITLabs team.</strong>
+            </p>
+
+        </main>
+        
+        <footer class="mt-8">
+            <p class="text-gray-500 dark:text-gray-400 font-barlow">
+                This email was sent to <strong>{{ instance.email }}</strong> as a one time generated email. Please, if you are not the right Audience, ignore 
+                or simply Discard it.
+            </p>
+            <p class="mt-3 text-gray-500 dark:text-gray-400">© 2023 VoltageITLabs™. All Rights Reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>
