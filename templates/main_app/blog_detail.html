@@ -1,5 +1,6 @@
 {% extends 'main_app/_base.html' %}
 {% load static %}
+{% load custom_tags %}
 {% block content %}
 <section>
     <main class="pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
@@ -23,18 +24,48 @@
                     {% endautoescape %}
                 </div>
                 <section class="not-format">
-                    <form class="mb-6">
-                        <div class="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-400 dark:bg-gray-800 dark:border-gray-700">
-                            <label for="comment" class="sr-only">Your comment</label>
-                            <textarea id="comment" rows="6"
-                                class="font-barlow px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-                                placeholder="Write a comment..." required></textarea>
+                    <form method="POST" class="mb-6" action="">
+                        {% csrf_token %}
+                        <div class="mb-6">
+                            <label for="id_email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                            <input type="email" id="id_email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="voltageitlabs@gmail.com" required>
                         </div>
-                        <button type="submit"
-                            class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-5 lg:mr-6 xl:mr-6">
+                        <div class="mb-6">
+                            <label for="id_body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Comment</label>
+                            <textarea id="id_body" name="body" cols="40" rows="10" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..." required></textarea>
+                        </div>
+                    
+                        <button type="submit" class="text-white font-barlow get-quote-btn-grad font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-5 lg:mr-6 xl:mr-6">
                             Post comment
                         </button>
                     </form>
+                    <h3 class="mb-4 text-lg font-semibold text-gray-900">Comments</h3>
+                    {% for comment in comments %}
+                        <!-- component -->
+                        <div class="antialiased mx-auto max-w-screen-sm mb-6">
+                            <div class="space-y-4">
+                                <div class="flex">
+                                    <div class="flex-shrink-0 mr-3">
+                                        <img class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10" src="https://cdn-icons-png.flaticon.com/512/172/172163.png?w=826&t=st=1687974695~exp=1687975295~hmac=c2117243fbbacc51eadd8e8aae54af7a0f8caf8ba774bdd3e3369337d46f9ae5" alt="">
+                                        </div>
+                                        <div class="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
+                                        <strong class="dark:text-white font-barlow font-semibold">{{ comment.email|extract_username }}</strong> <span class="text-xs text-gray-400"> {{ comment.time }}</span>
+                                        <p class="text-sm font-barlow dark:text-gray-300">
+                                            {{ comment.body }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% empty %}
+                    <div class="flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+                        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Info</span>
+                        <div>
+                            <span class="font-medium">Info!</span> There are no Comments for this blog post yet! Post your Comment.
+                        </div>
+                    </div>
+                    {% endfor %}
                 </section>
             </article>
         </div>
