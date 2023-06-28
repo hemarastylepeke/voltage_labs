@@ -1,4 +1,5 @@
 from pathlib import Path
+import sys
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -144,3 +145,17 @@ EMAIL_HOST_USER = 'voltageitlabs@gmail.com'
 EMAIL_HOST_PASSWORD = 'rsvinerizghwrhlj'
 YOUR_INBOX_EMAIL = 'voltageitlabs@gmail.com'
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'stream': sys.stdout,
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'ERROR',
+    },
+}

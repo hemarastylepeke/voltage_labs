@@ -1,1 +1,1 @@
-web: gunicorn voltage_labs.wsgi --error-logfile=error.log
+web: gunicorn voltage_labs.wsgi --log-file=-
