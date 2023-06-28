@@ -1,1 +1,1 @@
-web: gunicorn voltage_labs.wsgi --log-file=-
+web: python manage.py migrate && gunicorn voltage_labs.wsgi
