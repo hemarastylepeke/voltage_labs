@@ -1,3 +1,4 @@
+import uuid
 from django.db import models
 from django.urls import reverse
 from ckeditor.fields import RichTextField
@@ -30,6 +31,7 @@ class Project(models.Model):
 
 # Model for a blog.
 class Blog(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = RichTextField(null=True, blank=True)
@@ -40,7 +42,7 @@ class Blog(models.Model):
         return self.title
     
     def get_absolute_url(self):
-        return reverse("blog_detail", kwargs={"pk": self.pk})
+        return reverse("blog_detail", kwargs={"pk": self.id})
     
 # Model to handle blog comments.
 class Comment(models.Model):

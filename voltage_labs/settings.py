@@ -1,5 +1,4 @@
 from pathlib import Path
-import sys
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -12,7 +11,7 @@ SECRET_KEY = 'django-insecure-p-t+o45im!_+t==fpnc!!!r@yp((s!6=%*#1t4oeh3q$@d6e#*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "web-production-0635.up.railway.app"]
+ALLOWED_HOSTS = ["127.0.0.1", "voltageitlabs-env.eba-imh3prpg.eu-north-1.elasticbeanstalk.com", "www.voltageitlabs.com"]
 
 # Application definition
 
@@ -72,12 +71,15 @@ WSGI_APPLICATION = 'voltage_labs.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "B0BBahPxcLDl1vzqg13X",
+        "HOST": "containers-us-west-190.railway.app",
+        "PORT": "7389",
     }
 }
 
@@ -144,18 +146,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'voltageitlabs@gmail.com'
 EMAIL_HOST_PASSWORD = 'rsvinerizghwrhlj'
 YOUR_INBOX_EMAIL = 'voltageitlabs@gmail.com'
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            'stream': sys.stdout,
-        },
-    },
-    'root': {
-        'handlers': ['console'],
-        'level': 'ERROR',
-    },
-}
