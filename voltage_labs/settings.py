@@ -147,4 +147,4 @@ EMAIL_HOST_USER = 'voltageitlabs@gmail.com'
 EMAIL_HOST_PASSWORD = 'rsvinerizghwrhlj'
 YOUR_INBOX_EMAIL = 'voltageitlabs@gmail.com'
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-8f08.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-8f08.up.railway.app', 'https://www.voltageitlabs.com']
